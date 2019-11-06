@@ -1,4 +1,4 @@
-import javax.sound.midi.Soundbank;
+import java.util.Scanner;
 
 public class ejercicios_uf1<numTwo> {
     public static void main(String[] args) {
@@ -9,8 +9,14 @@ public class ejercicios_uf1<numTwo> {
         System.out.println("El IVA es " + IVA);
 
         //conditional sintax
-        int numOne = 5;
-        int numTwo = 5;
+
+        Scanner teclado = new Scanner(System.in);
+        int numOne;
+        int numTwo;
+        System.out.println("Introduce un numero para cada variable");
+        numOne = teclado.nextInt();
+        numTwo = teclado.nextInt();
+
         if( numOne > numTwo){
             System.out.println("numOne " + numOne+ " es mayor");
         }
@@ -30,6 +36,18 @@ public class ejercicios_uf1<numTwo> {
         if (numOne % numTwo == 0){
             System.out.println("Es multiplo");
         }
+
+        String name = "Barbara";
+        System.out.println(name.length());
+
+        //Draw
+        System.out.println(" + \"\"\"\"\" +");
+        System.out.println(" [| o o |]");
+        System.out.println("  |  ^  | ");
+        System.out.println("  | '_' |");
+        System.out.println("  +-----+");
+    //Scanner
+
     }
 
 }
