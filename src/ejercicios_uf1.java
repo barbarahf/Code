@@ -32,12 +32,15 @@ public class ejercicios_uf1 {
         if ( numTwo < numOne){
             System.out.println("numTwo "+ numTwo+ " es menor");
         }
-       else {
+       else if (numOne == numTwo){
             System.out.println("Son iguales");
         }
         //Num multiple of another
         if (numOne % numTwo == 0){
             System.out.println("Es multiplo");
+        }
+        else {
+            System.out.println("No es multiplo");
         }
 
         String name = "Barbara";
