@@ -26,7 +26,10 @@ public class ejercicios_uf1<numTwo> {
        else {
             System.out.println("Son iguales");
         }
-
+        //Num multiple of another
+        if (numOne % numTwo == 0){
+            System.out.println("Es multiplo");
+        }
     }
 
 }
