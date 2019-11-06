@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ejercicios_uf1<numTwo> {
+public class ejercicios_uf1 {
     public static void main(String[] args) {
         //Declaracion de constantes
         final String NOMBRE = "Barbara";
@@ -13,6 +13,9 @@ public class ejercicios_uf1<numTwo> {
         Scanner teclado = new Scanner(System.in);
         int numOne;
         int numTwo;
+        System.out.print("Enter a sentence:\t");
+        String variable2 = teclado.nextLine();
+        System.out.println(variable2);
         System.out.println("Introduce un numero para cada variable");
         numOne = teclado.nextInt();
         numTwo = teclado.nextInt();
