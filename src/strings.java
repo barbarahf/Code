@@ -9,7 +9,7 @@ public class strings {
         String introduceNombre = practicas.next(); //Acepta numeros y letras como string
 //        NOMBRES = practicas.nextLine();
         System.out.println("Hola " + "\"" + introduceNombre + "\"" + " jo em dic \"programa\"");
-//Ejercicio 2
+        //Ejercicio 2
         System.out.println("Introduce tu nombre:");
 
         String nombre1 = practicas.next();
@@ -25,12 +25,11 @@ public class strings {
         String nombreCompleto = nombre1 + apellido1 + apellido2;
 
         System.out.println(nombreCompleto);
-//Ejercicio 3
+        //Ejercicio 3
         System.out.println("Ejercicio 3, introduce tu nombre:");
         String stringLegth = practicas.next();
         System.out.println(stringLegth.charAt(0));
         System.out.println(stringLegth.charAt(stringLegth.length() - 1));
-
         //Ejercicio4
 
     }
