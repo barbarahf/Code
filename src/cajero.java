@@ -1,17 +1,33 @@
-//public class cajero {
-//    //Posible solucion pero no segura, hay caos en los que no funciona
-//    public static void main(String[] arg) {
-//        int c; //cantidad
-//        int b50 = c / 50; //numero de nilletes de 50
-//        int resto = c% 50; // resto de dinero que queda por dar resto = c-b50*50 =%)
-//        int b20 = resto /20;
-//        if (c== b50 * 50 + b20 * 20){
-//            System.out.println("son +b50+ billetes de 50euros y +b20+ billetes de 20euros");
-//        }else {
-//            System.out.println("nopuedodarlacantidad");
-//        }
-//        //Falla con 60 y 180
-//        //probar quitando el billete de 50euros
-//        //Hay que ver si hay billetes de 50euros
-//    }
-//}
+import java.util.Scanner;
+
+public class cajero {
+    public static void main(String[] arg) {
+        //Declaracion de variable para almacenar la cantidad solicitada.
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("IMPORTANTE: Nuestro cajero solo dispone de billetes de 50€ y 20€" + "\n" + "¿Cuanto dinero deseas retirar?:");
+
+        int cantidadIntro = teclado.nextInt();
+
+        System.out.println("Procesando transaccion... ");
+
+        int billetes50 = cantidadIntro / 50;
+        int resto = cantidadIntro % 50;
+        int billetes20 = resto / 20; //Utilizando el resto, 50 tiene prioridad
+
+        if (cantidadIntro == billetes50 * 50 + billetes20 * 20) {
+
+            //Operador condicional, solo mostrar billetes de 50 o 20 si es necesario.
+            System.out.println(billetes20 >= 1 ? "Recibes la cantidad de " + billetes20 + " billetes de 20€" : "");
+            System.out.println(billetes50 >= 1 ? "Recibes la cantidad de " + billetes50 + " billetes de 50€" : "");
+
+        } else if (billetes50 >= 1) { //Comprobar si hay billetes de 50
+            billetes50 += -1; //Quitar un billete de 50, añadirlo al resto y dividirlo entre 20.
+            resto += 50;
+            billetes20 = resto / 20;
+            System.out.println(billetes20 >= 1 ? "Recibes la cantidad de " + billetes20 + " billetes de 20€" : "");
+            System.out.println(billetes50 >= 1 ? "Recibes la cantidad de " + billetes50 + " billetes de 50€" : "");
+        } else {
+            System.out.println("No se puede extraer la cantidad ingresada");
+        }
+    }
+}
