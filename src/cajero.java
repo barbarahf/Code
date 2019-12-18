@@ -21,7 +21,7 @@ public class cajero {
             System.out.println(billetes50 >= 1 ? "Recibes la cantidad de " + billetes50 + " billetes de 50€" : "");
 
         } else if (billetes50 >= 1) { //Comprobar si hay billetes de 50
-            billetes50 += -1; //Quitar un billete de 50, añadirlo al resto y dividirlo entre 20.
+            billetes50 -= 1; //Quitar un billete de 50, añadirlo al resto y dividirlo entre 20.
             resto += 50;
             billetes20 = resto / 20;
             System.out.println(billetes20 >= 1 ? "Recibes la cantidad de " + billetes20 + " billetes de 20€" : "");

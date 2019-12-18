@@ -10,9 +10,5 @@ public class bucles {
             System.out.println(nombre.charAt(j));
         }
 
-        int nameUp , namdDown;
-//        for (nameUp = nombre.length()-1, namdDown= 0; nameUp >=0 , namdDown< nombre.length(); nameUp--) {
-//            System.out.println(nombre.charAt(nameUp));
-//        }
     }
 }
