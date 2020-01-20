@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7e46db14-c07b-4b3d-ad28-2dc95aac692d" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1W1rXMM3BB0PZxXoqPkfoGErXHF" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.loopsFinal">
+    <configuration name="bucles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bucles" />
+      <module name="Java_Ejercicios_New" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="loopsFinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="loopsFinal" />
+      <module name="Java_Ejercicios_New" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.loopsFinal" />
+        <item itemvalue="Application.bucles" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e46db14-c07b-4b3d-ad28-2dc95aac692d" name="Default Changelist" comment="" />
+      <created>1578223141406</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578223141406</updated>
+      <workItem from="1578223143954" duration="2151000" />
+      <workItem from="1578327988021" duration="2982000" />
+      <workItem from="1578349597200" duration="811000" />
+      <workItem from="1578395360823" duration="4098000" />
+      <workItem from="1578423431803" duration="7164000" />
+      <workItem from="1578475194707" duration="5388000" />
+      <workItem from="1578490803981" duration="377000" />
+      <workItem from="1578565542965" duration="5821000" />
+      <workItem from="1578583760987" duration="601000" />
+      <workItem from="1578653959072" duration="2881000" />
+      <workItem from="1578667003225" duration="916000" />
+      <workItem from="1578822777730" duration="1014000" />
+      <workItem from="1578823822430" duration="8351000" />
+      <workItem from="1578949390740" duration="600000" />
+      <workItem from="1579114497770" duration="185000" />
+      <workItem from="1579117195894" duration="624000" />
+      <workItem from="1579160890154" duration="1996000" />
+      <workItem from="1579182870853" duration="568000" />
+      <workItem from="1579244061456" duration="6927000" />
+      <workItem from="1579265183378" duration="45000" />
+      <workItem from="1579353491325" duration="717000" />
+      <workItem from="1579454418137" duration="2577000" />
+      <workItem from="1579457848892" duration="4195000" />
+      <workItem from="1579513830636" duration="3415000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
