@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class bucles {
 
-    private static boolean isDigit(String dTrabaja) {
-        return dTrabaja.matches("[0-9]*");
-
-
-    }
+//    private static boolean isDigit(String dTrabaja) {
+//        return dTrabaja.matches("[0-9]*");
+//
+//
+//    }
 
     public static void main(String[] arg) {
 //        //Ejercicio 1
@@ -69,7 +69,6 @@ public class bucles {
 ////            result = Integer.parseInt(d);
 //        } while (!isDigit(diasString) || Integer.parseInt(diasString) >= 31);
 //        System.out.println("Trabajaste" + " " + diasString + " dias");
-
 
 
 

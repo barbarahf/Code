@@ -1,11 +1,12 @@
 import java.util.Scanner;
 
 public class loopsFinal {
-        String numeros;
+//    String numeros;
 
-    public static boolean Comprobar(String numeros) {
-        return numeros.matches("[1-9]*");
-    }
+//    public static boolean Comprobar(String numeros) {
+//        return numeros.matches("[1-9]*");
+//    }
+
     public static void main(String[] args) {
         //Ejercicio 8
 //        Scanner teclado = new Scanner(System.in);
@@ -82,30 +83,33 @@ public class loopsFinal {
             }
         }
         //Ejercicio 12
-        int[] numeros = {1, 2, 0};
-        int conunt = 0;
-        for (int i = 0; i < numeros.length; i++) {
-            int a = numeros[i];
-            for (int j = 0; j < numeros.length; j++) {
-                int b = numeros[j];
-                for (int k = 0; k < numeros.length; k++) {
-                    int c = numeros[k];
-                    if (a != 0) {
-//                        System.out.println(a + " " + b + " " + c);
-                        conunt++;
+//        int[] numeros = {1, 2, 0};
+//        int conunt = 0;
+//        for (int i = 0; i < numeros.length; i++) {
+//            int a = numeros[i];
+//            for (int j = 0; j < numeros.length; j++) {
+//                int b = numeros[j];
+//                for (int k = 0; k < numeros.length; k++) {
+//                    int c = numeros[k];
+//                    if (a != 0) {
+////                        System.out.println(a + " " + b + " " + c);
+//                        conunt++;
+//
+//                    }
+//                }
+//            }
+//        }
 
-                    }
-                }
-            }
-        }
-        System.out.println(conunt);
-//        //Ejercicio 13/*   ?¿???¿?
+
+//        System.out.println(conunt);
+//        //Ejercicio 13/*
 //        for (int f = 1; f < 100; f++) {
 //            int finalValue = (int) Math.pow(f, 2);
 //            int varSuma = finalValue;
 //            System.out.println(finalValue);
 //            int n = finalValue;
 //        }
+
         //Ejercicio 14
         /*Tenim un càmping amb 9 bungalous i tres famílies que cal ubicar en aquests. Si
 numerem de 1 a 9 els bungalous i anomenem a, b i c a les famílies, indiqueu totes les ternes
@@ -114,8 +118,18 @@ disponibles. És fàcil determinar que hem de fer tres bucles niuats de 1 a 9 de
 repeticions (un bucle per a cada família) i que hi ha un total de 504 combinacions possibles
 d’ubicar les tres famílies als 9 bungalous (se suposa que tots estan lliures evidentment).
 */
-        int camBungalos = 9;
-
-
+/*for ( int i = 0; i <=10; i++)
+{
+    numbers[i] = i;
+}*/
+//        int []camBungalos = new int[8];
+//        //¿Como mostrar el contenido de una array*/
+////        String familiaA = "Mendez";
+////        String familiaB = "Flores";
+////        String familiaC = "Herrera";
+//        for (int i = 0; i <= 9; i++) {
+//           camBungalos[i] = 5;
+//            System.out.println(camBungalos.length);
+//        }
     }
 }

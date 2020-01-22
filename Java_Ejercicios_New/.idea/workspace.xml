@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e46db14-c07b-4b3d-ad28-2dc95aac692d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ArrayStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BIDIMENSIONAL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/usoArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Ejercicios_New/bucles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Ejercicios_New/bucles.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java_Ejercicios_New/loopsFinal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Ejercicios_New/loopsFinal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bucles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bucles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/loopsFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loopsFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New_Proyects/src/arraysEjercicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/../New_Proyects/src/arraysEjercicios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New_Proyects/src/dgmk.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +37,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -47,7 +55,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.loopsFinal">
+  <component name="RunManager" selected="Application.matricesFinal">
+    <configuration name="ArrayStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArrayStrings" />
+      <module name="Java_Ejercicios_New" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array" />
+      <module name="Java_Ejercicios_New" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="bucles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bucles" />
       <module name="Java_Ejercicios_New" />
@@ -55,8 +77,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="loopsFinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="loopsFinal" />
+    <configuration name="matricesFinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="matricesFinal" />
+      <module name="Java_Ejercicios_New" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="usoArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="usoArray" />
       <module name="Java_Ejercicios_New" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -64,7 +93,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.loopsFinal" />
+        <item itemvalue="Application.matricesFinal" />
+        <item itemvalue="Application.ArrayStrings" />
+        <item itemvalue="Application.array" />
+        <item itemvalue="Application.usoArray" />
         <item itemvalue="Application.bucles" />
       </list>
     </recent_temporary>
@@ -103,7 +135,13 @@
       <workItem from="1579454418137" duration="2577000" />
       <workItem from="1579457848892" duration="4195000" />
       <workItem from="1579513830636" duration="3415000" />
-      <workItem from="1579520474733" duration="2448000" />
+      <workItem from="1579520474733" duration="3290000" />
+      <workItem from="1579531811564" duration="2073000" />
+      <workItem from="1579541515105" duration="636000" />
+      <workItem from="1579599038519" duration="21826000" />
+      <workItem from="1579682855636" duration="12593000" />
+      <workItem from="1579706738475" duration="968000" />
+      <workItem from="1579709726470" duration="831000" />
     </task>
     <servers />
   </component>
@@ -115,10 +153,31 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/matricesFinal.java</url>
+          <line>7</line>
+          <properties class="matricesFinal" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="vec1[99]" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

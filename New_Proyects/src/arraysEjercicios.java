@@ -21,7 +21,7 @@ public class arraysEjercicios {
 //            System.out.print("Introduce un elemento tipo string al array:");
 //            cadenaArray[n] = scan.nextLine();
 //        }
-//        for (int i = 0; i < cadenaArray.length; i++) {
+//        for (int i = 0; i < cadenaArray.length; i0....++) {
 //            System.out.print("Elemento" + (i + 1) + " : ");
 //            System.out.print(cadenaArray[i] + "\n");
 //        }
