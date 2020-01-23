@@ -5,6 +5,10 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class matricesFinal {
+    public static boolean Comprobar(String options) {
+        return options.matches("piedra|papel|tijeras");
+    }
+
     public static void main(String[] args) {
 //        float[] firstArray = new float[1000];
 //        firstArray[2] = 15;
@@ -16,7 +20,7 @@ public class matricesFinal {
 //
 //            }
 //        }
-//        Scanner teclado = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in);
         //Ejercicio 2
 //        //Arrays.deepToString(twoDimensionArray)
 //        String[] datoText = new String[10];
@@ -83,18 +87,54 @@ public class matricesFinal {
 //                    char x = Array.getChar(porcentajes, getAle);
 //        }
         //EJERCICIO 5
-        String separator = "";
-        char[] porcentajes = {'1', '1', '1', '1', '1', '1', '1', '1', '1', '1', 'X', 'X', 'X', '2', '2', '2'};
-        int lastNum = porcentajes.length - 1;
-//        int firstNum = porcentajes[0];
-        System.out.print("[");
-        for (int recorre = 0; recorre < porcentajes.length; recorre++) {
-//            Arrays.sort(porcentajes);
-            int getAleatory = (int) (Math.random() * (lastNum - 0 + 1) + 0);
-            System.out.print(separator + (porcentajes[getAleatory])); separator = ", ";
-        }
-        System.out.print("]");
+//        String separator = "";
+//        char[] porcentajes = {'1', '1', '1', '1', '1', '1', '1', '1', '1', '1', 'X', 'X', 'X', '2', '2', '2'};
+//        int lastNum = porcentajes.length - 1;
+////        int firstNum = porcentajes[0];
+//        System.out.print("[");
+//        for (int recorre = 0; recorre < porcentajes.length; recorre++) {
+////            Arrays.sort(porcentajes);
+//            int getAleatory = (int) (Math.random() * (lastNum - 0 + 1) + 0);
+//            System.out.print(separator + (porcentajes[getAleatory]));
+//            separator = ", ";
+//        }
+//        System.out.print("]");
         //Ejercicio 6
+        String[] cadenasVec = {"piedra", "papel", "tijeras"};
+        String varInput = teclado.nextLine();
+        String aleatory = cadenasVec[(int) (Math.random() * 3)];
+        while (!Comprobar(varInput)) {
+            System.out.println("Los valores introducidos son incorrectos, intentalo otra vez");
+            varInput = teclado.nextLine();
+        }
+        System.out.println("Computadora: " + aleatory);
+        System.out.println("Tu: " + varInput);
+        switch (varInput) {
+            case "piedra":
+                if (aleatory.equalsIgnoreCase("tijeras")) {
+                    System.out.println("ganas");
+                } else if (aleatory.equalsIgnoreCase("papel")) {
+                    System.out.println("pierdes");
+                }
+                break;
+            case "papel":
+                if (aleatory.equalsIgnoreCase("piedra")) {
+                    System.out.println("ganas");
+                } else if (aleatory.equalsIgnoreCase("tijeras")) {
+                    System.out.println("pierdes");
+                }
+                break;
+            case "tijeras":
+                if (aleatory.equalsIgnoreCase("papel")) {
+                    System.out.println("ganas");
+                } else if (aleatory.equalsIgnoreCase("piedra")) {
+                    System.out.println("pierdes");
+                }
+                break;
+        }
+        //Ejercicio 7
     }
 
 }
+
+

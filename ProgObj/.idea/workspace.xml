@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6064bd4-735b-4dba-a622-97680e61df0d" name="Default Changelist" comment="" />
+    <list default="true" id="e6064bd4-735b-4dba-a622-97680e61df0d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/jugadores.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/objectosFechaCorrec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Ejercicios_New/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ejercicios_New/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Ejercicios_New/out/production/Java_Ejercicios_New/matricesFinal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ejercicios_New/out/production/Java_Ejercicios_New/matricesFinal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Ejercicios_New/src/matricesFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ejercicios_New/src/matricesFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProgObj/META-INF/ProgObj.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProgObj/com/company/Main$Fecha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProgObj/com/company/Main$Tiempo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProgObj/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProgObj/com/company/clasEx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/clasEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/clasEx.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,12 +30,17 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1WD4pvSoMq0FdtXcG0w2kMUSajx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java_Ejercicios_New" />
@@ -72,10 +92,25 @@
       <workItem from="1579265231418" duration="1527000" />
       <workItem from="1579270353245" duration="6554000" />
       <workItem from="1579353241897" duration="247000" />
+      <workItem from="1579721283324" duration="1369000" />
+      <workItem from="1579731777313" duration="3172000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

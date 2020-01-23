@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e46db14-c07b-4b3d-ad28-2dc95aac692d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ArrayStrings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BIDIMENSIONAL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/usoArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgObj/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgObj/src/com/company/jugadores.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgObj/src/com/company/objectosFechaCorrec.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Ejercicios_New/bucles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Ejercicios_New/bucles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Ejercicios_New/loopsFinal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Ejercicios_New/loopsFinal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bucles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bucles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/loopsFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loopsFinal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../New_Proyects/src/arraysEjercicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/../New_Proyects/src/arraysEjercicios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../New_Proyects/src/dgmk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Ejercicios_New/matricesFinal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Ejercicios_New/matricesFinal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/matricesFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matricesFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgObj/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgObj/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgObj/out/production/ProgObj/META-INF/ProgObj.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgObj/out/production/ProgObj/com/company/Main$Fecha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgObj/out/production/ProgObj/com/company/Main$Tiempo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgObj/out/production/ProgObj/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgObj/out/production/ProgObj/com/company/clasEx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgObj/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgObj/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgObj/src/com/company/clasEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgObj/src/com/company/clasEx.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +144,8 @@
       <workItem from="1579599038519" duration="21826000" />
       <workItem from="1579682855636" duration="12593000" />
       <workItem from="1579706738475" duration="968000" />
-      <workItem from="1579709726470" duration="831000" />
+      <workItem from="1579709726470" duration="3103000" />
+      <workItem from="1579777277792" duration="4222000" />
     </task>
     <servers />
   </component>
@@ -162,18 +166,6 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/matricesFinal.java</url>
-          <line>7</line>
-          <properties class="matricesFinal" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="vec1[99]" />

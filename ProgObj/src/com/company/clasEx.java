@@ -1,6 +1,6 @@
-package com.company;
-
-public class clasEx {
-
-
-}
+//package com.company;
+//
+//public class clasEx {
+//
+//
+//}
