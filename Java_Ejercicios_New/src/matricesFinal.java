@@ -9,6 +9,10 @@ public class matricesFinal {
         return options.matches("piedra|papel|tijeras");
     }
 
+    public static int randomNumbers(int min, int max) {
+        return (int) (Math.random() * (max - min + 1) + min);
+    }
+
     public static void main(String[] args) {
 //        float[] firstArray = new float[1000];
 //        firstArray[2] = 15;
@@ -100,39 +104,53 @@ public class matricesFinal {
 //        }
 //        System.out.print("]");
         //Ejercicio 6
-        String[] cadenasVec = {"piedra", "papel", "tijeras"};
-        String varInput = teclado.nextLine();
-        String aleatory = cadenasVec[(int) (Math.random() * 3)];
-        while (!Comprobar(varInput)) {
-            System.out.println("Los valores introducidos son incorrectos, intentalo otra vez");
-            varInput = teclado.nextLine();
-        }
-        System.out.println("Computadora: " + aleatory);
-        System.out.println("Tu: " + varInput);
-        switch (varInput) {
-            case "piedra":
-                if (aleatory.equalsIgnoreCase("tijeras")) {
-                    System.out.println("ganas");
-                } else if (aleatory.equalsIgnoreCase("papel")) {
-                    System.out.println("pierdes");
-                }
-                break;
-            case "papel":
-                if (aleatory.equalsIgnoreCase("piedra")) {
-                    System.out.println("ganas");
-                } else if (aleatory.equalsIgnoreCase("tijeras")) {
-                    System.out.println("pierdes");
-                }
-                break;
-            case "tijeras":
-                if (aleatory.equalsIgnoreCase("papel")) {
-                    System.out.println("ganas");
-                } else if (aleatory.equalsIgnoreCase("piedra")) {
-                    System.out.println("pierdes");
-                }
-                break;
-        }
+//        String[] cadenasVec = {"piedra", "papel", "tijeras"};
+//        String varInput = teclado.nextLine();
+//        String aleatory = cadenasVec[(int) (Math.random() * 3)];
+//        while (!Comprobar(varInput)) {
+//            System.out.println("Los valores introducidos son incorrectos, intentalo otra vez");
+//            varInput = teclado.nextLine();
+//        }
+//        System.out.println("Computadora: " + aleatory);
+//        System.out.println("Tu: " + varInput);
+//        switch (varInput) {
+//            case "piedra":
+//                if (aleatory.equalsIgnoreCase("tijeras")) {
+//                    System.out.println("ganas");
+//                } else if (aleatory.equalsIgnoreCase("papel")) {
+//                    System.out.println("pierdes");
+//                }
+//                break;
+//            case "papel":
+//                if (aleatory.equalsIgnoreCase("piedra")) {
+//                    System.out.println("ganas");
+//                } else if (aleatory.equalsIgnoreCase("tijeras")) {
+//                    System.out.println("pierdes");
+//                }
+//                break;
+//            case "tijeras":
+//                if (aleatory.equalsIgnoreCase("papel")) {
+//                    System.out.println("ganas");
+//                } else if (aleatory.equalsIgnoreCase("piedra")) {
+//                    System.out.println("pierdes");
+//                }
+//                break;
+//        }
         //Ejercicio 7
+//        int minNum = 0;
+//        int maxNum = 50;
+//        int[] aleatoryElements = new int[100];
+//        for (int i = 0; i < aleatoryElements.length; i++) {
+//            int getAleatory2 = (int) (Math.random() * (maxNum - minNum + 1) + minNum);
+//            aleatoryElements[i] = getAleatory2;
+////            System.out.print(aleatoryElements[i] + " ");
+//            if (aleatoryElements[i] == aleatoryElements[i]){
+//
+//            }
+//        }
+        /* Arrays.sort(arr);
+         */
+
     }
 
 }

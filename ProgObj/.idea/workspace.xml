@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6064bd4-735b-4dba-a622-97680e61df0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/jugadores.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/objectosFechaCorrec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_Ejercicios_New/src/ocurrencesArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_start.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/exaple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Java_Ejercicios_New/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ejercicios_New/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Java_Ejercicios_New/out/production/Java_Ejercicios_New/matricesFinal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ejercicios_New/out/production/Java_Ejercicios_New/matricesFinal.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Java_Ejercicios_New/src/matricesFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ejercicios_New/src/matricesFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nuevo documento de texto.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProgObj/META-INF/ProgObj.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProgObj/com/company/Main$Fecha.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProgObj/com/company/Main$Tiempo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProgObj/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProgObj/com/company/clasEx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProgObj/com/company/objectosFechaCorrec.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProgObj/com/company/objectosFechaCorrec.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/clasEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/clasEx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/clasEx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/jugadores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/jugadores.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +41,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java_Ejercicios_New" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -94,6 +92,10 @@
       <workItem from="1579353241897" duration="247000" />
       <workItem from="1579721283324" duration="1369000" />
       <workItem from="1579731777313" duration="3172000" />
+      <workItem from="1579796943571" duration="1247000" />
+      <workItem from="1579801045855" duration="8000" />
+      <workItem from="1579812121224" duration="28000" />
+      <workItem from="1579850114906" duration="2623000" />
     </task>
     <servers />
   </component>
