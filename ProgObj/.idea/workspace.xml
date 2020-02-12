@@ -2,18 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6064bd4-735b-4dba-a622-97680e61df0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Java_Ejercicios_New/src/ocurrencesArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_start.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/exaple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uf1/poo/Fecha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uf1/poo/ProvaFecha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uf1/poo/ProvaJugador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ARRAY9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/Examen_limpio.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/out/production/Examen_limpio/Fecha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/out/production/Examen_limpio/ProvaFecha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/out/production/Examen_limpio/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/src/Fecha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/src/com/company/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Java_Ejercicios_New/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ejercicios_New/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_Ejercicios_New/out/production/Java_Ejercicios_New/matricesFinal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ejercicios_New/out/production/Java_Ejercicios_New/matricesFinal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_Ejercicios_New/src/matricesFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ejercicios_New/src/matricesFinal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nuevo documento de texto.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Ejercicios_New/out/production/Java_Ejercicios_New/BIDIMENSIONAL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Ejercicios_New/out/production/Java_Ejercicios_New/GFG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Ejercicios_New/out/production/Java_Ejercicios_New/bucles.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ejercicios_New/out/production/Java_Ejercicios_New/bucles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Ejercicios_New/src/BIDIMENSIONAL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Ejercicios_New/src/bucles.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ejercicios_New/src/bucles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Ejercicios_New/src/ocurrencesArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ejercicios_New/src/ocurrencesArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_start.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProgObj/META-INF/ProgObj.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProgObj/com/company/objectosFechaCorrec.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProgObj/com/company/objectosFechaCorrec.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/clasEx.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/jugadores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/jugadores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/objectosFechaCorrec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/objectosFechaCorrec.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +58,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../POO" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -56,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ProvaFecha">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="ALTERNATIVE_JRE_PATH" value="13.0.1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -68,8 +85,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProvaFecha" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="uf1.poo.ProvaFecha" />
+      <module name="ProgObj" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uf1.poo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProvaJugador" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="uf1.poo.ProvaJugador" />
+      <module name="ProgObj" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uf1.poo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProvaFecha" />
+        <item itemvalue="Application.ProvaJugador" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -96,6 +141,10 @@
       <workItem from="1579801045855" duration="8000" />
       <workItem from="1579812121224" duration="28000" />
       <workItem from="1579850114906" duration="2623000" />
+      <workItem from="1579875810201" duration="1913000" />
+      <workItem from="1580153340285" duration="610000" />
+      <workItem from="1580239622807" duration="139000" />
+      <workItem from="1580252642881" duration="71000" />
     </task>
     <servers />
   </component>

@@ -1,19 +1,17 @@
-package com.company;
+package uf1.poo;
 
 import java.util.Scanner;
 
-public class objectosFechaCorrec {
-
+public class Fecha {
     // Propietats
     private int dia, mes, any;
 
-    public objectosFechaCorrec(int dia, int mes, int any) {
+    public Fecha(int dia, int mes, int any) {
         this.dia = dia;
         this.mes = mes;
         this.any = any;
     }
-
-    public objectosFechaCorrec() {
+    public Fecha() {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Introsueix la data: ");
         System.out.print("Dia: ");
@@ -24,16 +22,6 @@ public class objectosFechaCorrec {
         any = entrada.nextInt();
     }
 
-    // En l'exemple no es fan servir tots els getters/setters
-
-    public int getDia() {
-        return dia;
-    }
-
-    public int getMes() {
-        return mes;
-    }
-
     public int getAny() {
         return any;
     }
@@ -42,23 +30,10 @@ public class objectosFechaCorrec {
         this.dia = dia;
     }
 
-    public void setMes(int mes) {
-        this.mes = mes;
-    }
-
-    public void setAny(int any) {
-        this.any = any;
-    }
-
     @Override
     public String toString() {
         // 1return "Fecha{" + "dia=" + dia + ", mes=" + mes + ", any=" + any + '}';
         return dia + "/" + mes + "/" + any;
     }
 
-    public static void main(String[] args) {
-
-    }
-
 }
-

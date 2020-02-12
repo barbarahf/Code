@@ -2,13 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e46db14-c07b-4b3d-ad28-2dc95aac692d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ocurrencesArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgObj/src/uf1/poo/Fecha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgObj/src/uf1/poo/ProvaFecha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgObj/src/uf1/poo/ProvaJugador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ARRAY9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/Examen_limpio.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/out/production/Examen_limpio/Fecha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/out/production/Examen_limpio/ProvaFecha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/out/production/Examen_limpio/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/src/Fecha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examen_limpio/src/com/company/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Ejercicios_New/matricesFinal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Ejercicios_New/matricesFinal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/matricesFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matricesFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Ejercicios_New/BIDIMENSIONAL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Ejercicios_New/GFG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Ejercicios_New/bucles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Ejercicios_New/bucles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BIDIMENSIONAL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bucles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bucles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ocurrencesArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ocurrencesArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_start.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProgObj/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgObj/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgObj/out/production/ProgObj/META-INF/ProgObj.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProgObj/out/production/ProgObj/com/company/objectosFechaCorrec.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgObj/out/production/ProgObj/com/company/objectosFechaCorrec.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProgObj/src/com/company/jugadores.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgObj/src/com/company/jugadores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgObj/src/com/company/objectosFechaCorrec.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgObj/src/com/company/objectosFechaCorrec.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +54,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProgObj" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -51,14 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GFG">
-    <configuration name="ArrayStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ArrayStrings" />
-      <module name="Java_Ejercicios_New" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ejercicios">
     <configuration name="GFG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GFG" />
       <module name="Java_Ejercicios_New" />
@@ -66,8 +81,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array" />
+    <configuration name="bucles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bucles" />
+      <module name="Java_Ejercicios_New" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ejercicios" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ejercicios" />
+      <module name="Java_Ejercicios_New" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="examen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="examen" />
       <module name="Java_Ejercicios_New" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,20 +109,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="usoArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="usoArray" />
-      <module name="Java_Ejercicios_New" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ejercicios" />
+        <item itemvalue="Application.bucles" />
+        <item itemvalue="Application.examen" />
         <item itemvalue="Application.GFG" />
         <item itemvalue="Application.matricesFinal" />
-        <item itemvalue="Application.ArrayStrings" />
-        <item itemvalue="Application.array" />
-        <item itemvalue="Application.usoArray" />
       </list>
     </recent_temporary>
   </component>
@@ -141,6 +163,11 @@
       <workItem from="1579777277792" duration="6873000" />
       <workItem from="1579796079909" duration="859000" />
       <workItem from="1579812151854" duration="471000" />
+      <workItem from="1579875837368" duration="7054000" />
+      <workItem from="1579972939919" duration="334000" />
+      <workItem from="1580075744496" duration="2569000" />
+      <workItem from="1580153239631" duration="813000" />
+      <workItem from="1580239536973" duration="83000" />
     </task>
     <servers />
   </component>
@@ -165,23 +192,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ocurrencesArray.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ocurrencesArray.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ocurrencesArray.java</url>
           <line>28</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ocurrencesArray.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

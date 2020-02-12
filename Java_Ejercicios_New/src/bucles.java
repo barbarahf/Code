@@ -69,6 +69,7 @@ public class bucles {
 ////            result = Integer.parseInt(d);
 //        } while (!isDigit(diasString) || Integer.parseInt(diasString) >= 31);
 //        System.out.println("Trabajaste" + " " + diasString + " dias");
+        //3 Familia, 9 bungalos
 
 
 
