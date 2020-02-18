@@ -22,18 +22,16 @@ public class array {
 //            System.out.println(value);
 //        }
         //Ejercicio 1
-//        float[] vercotF;
-//        vercotF = new float[1000];
-//        vercotF[5] = 5;
-//        for (int i = 0; i < vercotF.length; i++) {
-//            if (vercotF[i] != 0) {
-//                System.out.println("Uno de los elementos del vector no es 0: " + vercotF[i]);
-//
-//            } else {
-//                System.out.println("eny");
-//            }
-//
+       float[] vercotF;
+       vercotF = new float[1000];
+       vercotF[5] = 5;
+       for (int i = 0; i < vercotF.length; i++) {
+           if (vercotF[i] != 0) {
+               System.out.println("Uno de los elementos del vector no es 0: " + vercotF[i]);
 
+           } else {
+               System.out.println("eny");
+           }
 
         //Ejercicio 2
     }
