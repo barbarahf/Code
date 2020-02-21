@@ -127,27 +127,29 @@ public class Main {
         double porcentaje = precio * descuento / 100;
         return precio - porcentaje;
     }
-//    15 x 80
-    //500 metros
-//500/30 40x15
-    /*10
-    1metrs.*/
 
     //Ejercicio 14
     public static int numLosas(double altoLosa, double anchoLosa, double area) {
         area = area * area;
-        float tamanoBaldosa = (float) (altoLosa * anchoLosa);
+        double tamanoBaldosa = altoLosa * anchoLosa;
         return (int) Math.ceil((area / tamanoBaldosa));
     }
 
     //Ejercicio 15
-//    facturaTelefonica (float duracion,float  costeEstablecido, float costoMinuto){
-//        return 0;
-//    }
-    float facturaTelefonica(float duracion, float costeEstablecido, float costoMinuto) {
-//        numLosas(hola, chao, )
+    /*
+    * – Realitzeu una funció FacturaTelefonica (durada, cost_establiment, cost_minut), al
+que passem la duració d’una trucada telefònica en minuts, el cost d’establiment i el cost per
+minut que ens factura la companyia i ens retornarà el cost total d’aquesta trucada en euros.
+    * */
+    public static int facturaTelefonica(float duracion, float costeEstablecido, float costoMinuto) {
+        duracion = 15; //minutos
+        duracion += costeEstablecido;
+
+
         return 0;
     }
+    //Ejercicio 16
+
 
     public static void main(String[] args) {
         //Ejercicio 1
@@ -210,5 +212,9 @@ public class Main {
         System.out.println("Prueba");
         float y = (float) 127.1;
         System.out.println(Math.ceil(y));
+
+        //Ejercicio 16
+
+
     }
 }
