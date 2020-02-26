@@ -2,7 +2,15 @@ package com.company;
 
 import java.util.*;
 
+
 public class Main {
+    public static long multiplyNumbers(int num) {
+        if (num >= 1)
+            return num * multiplyNumbers(num - 1);
+        else
+            return 1;
+    }
+
     //Ejercicio 1
     public static int longitud(String cadena) {
         return cadena.length();
@@ -130,59 +138,95 @@ public class Main {
 
     //Ejercicio 14
     public static int numLosas(double altoLosa, double anchoLosa, double area) {
-        area = area * area;
         double tamanoBaldosa = altoLosa * anchoLosa;
         return (int) Math.ceil((area / tamanoBaldosa));
     }
-
     //Ejercicio 15
-    /*
-    * – Realitzeu una funció FacturaTelefonica (durada, cost_establiment, cost_minut), al
-que passem la duració d’una trucada telefònica en minuts, el cost d’establiment i el cost per
-minut que ens factura la companyia i ens retornarà el cost total d’aquesta trucada en euros.
-    * */
-    public static int facturaTelefonica(float duracion, float costeEstablecido, float costoMinuto) {
-        duracion = 15; //minutos
-        duracion += costeEstablecido;
 
-
-        return 0;
-    }
+    //    public static void  facturaTelefonica(float duracion, float costeEstablecido, float costoMinuto) {
+//        duracion += costeEstablecido;
+//        duracion *= costoMinuto;
+//       // costeEstablecido x costoMinuto + duracion
+//        System.out.println("El costo de su llamada es de "+duracion+"€");
+//    }
     //Ejercicio 16
+    public static float facturaTelefonica(float duracionMinutos, float costeEstablecido, float costoMinuto) {
+        return costoMinuto * duracionMinutos + costeEstablecido;
+    }
 
+    public static int multiplicar(int a, int b) {
+        return a * b;
+    }
+
+    //Ejercicio 17
+    // /*
+//    String h="01:00:00";
+//    String[] h1=h.split(":");
+//
+//    int hour=Integer.parseInt(h1[0]);
+//    int minute=Integer.parseInt(h1[1]);
+//    int second=Integer.parseInt(h1[2]);
+//
+//    int temp;
+//    temp = second + (60 * minute) + (3600 * hour);
+//
+//    public static int QuansSegons(int dias, int horas, int minutos, int segundos) {
+//        int segundosCount = 60;
+//
+////        return multiplicar(multiplicar(dias, 24),
+////                multiplicar(segundosCount, segundosCount)) +
+////                multiplicar(horas, segundosCount) + multiplicar(minutos, segundosCount);
+//
+//
+////        horas = horas * 60 * 60;
+////        dias = dias * 24 * 60 * 60;
+////        return minutos + horas + dias + segundos;
+//
+//    }
+
+    //Una hora es = 3600s segundos
+// un minuto =  60s
+    //Dias = 86400;
+    public static int QuansSegons(int dias, int horas, int minutos, int segundos) {
+        horas *= 60 * 60;
+        dias *= 24 * 60 * 60;
+        minutos *= 60;
+        return minutos + horas + dias + segundos;
+    }
 
     public static void main(String[] args) {
         //Ejercicio 1
         Scanner teclado = new Scanner(System.in);
-//        System.out.println("Introduce una cadena:");
+        System.out.println("Introduce una cadena:");
 //        String longCadenada = teclado.nextLine();
 //        System.out.println("La longitud de la cadena es: " + longitud(longCadenada));
 
         //Ejercicio 2
-//        int a = 10;
-//        int b = 50;
-//        permutarValores(a, b);
-//        System.out.println("Vector antes ");
-//        System.out.println(a + " " + b);
+        int a = 10;
+        int b = 50;
+        permutarValores(a, b);
+        System.out.println("Vector antes ");
+        System.out.println(a + " " + b);
 //        //Ejercicio 2.1
-//        int vec[] = {15, 80};
-//        System.out.println("Vector antes: " + java.util.Arrays.toString(vec));
-//        permutar(vec);
-//        System.out.println("Vector antes: " + java.util.Arrays.toString(vec));
+        int vec[] = {15, 80};
+        System.out.println("Vector antes: " + java.util.Arrays.toString(vec));
+        permutar(vec);
+        System.out.println("Vector antes: " + java.util.Arrays.toString(vec));
 
         //Ejercicio 3
-//        System.out.println("Introduce dos digitos para generar valores " +
-//                "aleatorios, por ejemplo valores aleatorios del 5 al 15");
-//        int[] twoAleatory = new int[2];
+        System.out.println("Introduce dos digitos para generar valores " +
+                "aleatorios, por ejemplo valores aleatorios del 5 al 15");
+        int[] twoAleatory = new int[2];
 //        for (int i = 0; i < twoAleatory.length; i++) {
 //            System.out.println("Introduce un valor:");
 //            twoAleatory[i] = teclado.nextInt();
 //        }
 //        System.out.println(aleatorio(twoAleatory));
+
         //Ejercicio 4
-//        System.out.println(dau());
+        System.out.println(dau());
         //Ejercicio 5
-//        System.out.println(dos_dau());
+        System.out.println(dos_dau());
         //Ejercicio 6
 //        double introDouble = teclado.nextDouble();
         double nuevoDouble = 15.6;
@@ -197,24 +241,30 @@ minut que ens factura la companyia i ens retornarà el cost total d’aquesta tr
 //            System.out.println("El NIF con la tetra :" + nif(dniVariable));
 //        else
 //            System.out.println("El NIF debe tener una longitud de 8 caracteres");
-//        System.out.println(Arrays.toString(ordena_tres(5, 8, 1)));
-//        System.out.println(len_num(1000));
-//        piedrapapeltijera();
-//        System.out.println(triangle(5, 120, 4));
-//        Ejercicio 12
+
+        //Ejercicio 8
+        System.out.println(Arrays.toString(ordena_tres(5, 8, 1)));
+        System.out.println(len_num(1000));
+        piedrapapeltijera();
+        System.out.println(triangle(5, 120, 4));
+        //Ejercicio 12
         System.out.println("Introduce una talla para saber su equivalencia:");
 //        String talla = teclado.nextLine();
 //        System.out.println(talles_roba(talla));
         //Ejercico 13
         System.out.println(descuento(100, 10));
         System.out.println("Ejercicio 14");
-        System.out.println(numLosas(15, 40, 100));
-        System.out.println("Prueba");
-        float y = (float) 127.1;
-        System.out.println(Math.ceil(y));
+        System.out.println(numLosas(15, 15, 30));
+
 
         //Ejercicio 16
+        System.out.println("15");
 
-
+        System.out.println(facturaTelefonica(15, 1, 5));
+        System.out.println("16");
+//        System.out.println(QuansSegons(1, 1, 1, 1));
+        System.out.println(QuansSegons(1, 1, 1, 1));
     }
+
+
 }

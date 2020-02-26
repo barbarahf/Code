@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e844c83-2136-435d-8345-a646b692f3d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Funciones_12.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Funciones/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Funciones/com/company/funciones_class.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/com/company/funciones_class.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/funciones_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/funciones_class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejerciciosPOO/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ejerciciosPOO/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +47,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Funciones_12">
+    <configuration name="Funciones_12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Funciones_12" />
+      <module name="Funciones" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="Funciones" />
@@ -72,6 +80,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Funciones_12" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.funciones_clase" />
       </list>
@@ -106,7 +115,13 @@
       <workItem from="1582147335409" duration="5363000" />
       <workItem from="1582194520614" duration="5047000" />
       <workItem from="1582215824048" duration="75000" />
-      <workItem from="1582295545918" duration="1898000" />
+      <workItem from="1582295545918" duration="5554000" />
+      <workItem from="1582304692719" duration="204000" />
+      <workItem from="1582405279890" duration="8776000" />
+      <workItem from="1582435364110" duration="1360000" />
+      <workItem from="1582470329722" duration="600000" />
+      <workItem from="1582623711734" duration="2298000" />
+      <workItem from="1582708158901" duration="654000" />
     </task>
     <servers />
   </component>

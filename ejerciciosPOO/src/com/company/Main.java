@@ -1,5 +1,4 @@
 package com.company;
-
 import java.util.Scanner;
 class Tiempo {
     private int horas;
