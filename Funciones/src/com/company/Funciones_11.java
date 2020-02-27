@@ -3,7 +3,7 @@ package com.company;
 import java.util.*;
 
 
-public class Main {
+public class Funciones_11 {
     public static long multiplyNumbers(int num) {
         if (num >= 1)
             return num * multiplyNumbers(num - 1);
@@ -143,12 +143,6 @@ public class Main {
     }
     //Ejercicio 15
 
-    //    public static void  facturaTelefonica(float duracion, float costeEstablecido, float costoMinuto) {
-//        duracion += costeEstablecido;
-//        duracion *= costoMinuto;
-//       // costeEstablecido x costoMinuto + duracion
-//        System.out.println("El costo de su llamada es de "+duracion+"€");
-//    }
     //Ejercicio 16
     public static float facturaTelefonica(float duracionMinutos, float costeEstablecido, float costoMinuto) {
         return costoMinuto * duracionMinutos + costeEstablecido;
@@ -159,34 +153,6 @@ public class Main {
     }
 
     //Ejercicio 17
-    // /*
-//    String h="01:00:00";
-//    String[] h1=h.split(":");
-//
-//    int hour=Integer.parseInt(h1[0]);
-//    int minute=Integer.parseInt(h1[1]);
-//    int second=Integer.parseInt(h1[2]);
-//
-//    int temp;
-//    temp = second + (60 * minute) + (3600 * hour);
-//
-//    public static int QuansSegons(int dias, int horas, int minutos, int segundos) {
-//        int segundosCount = 60;
-//
-////        return multiplicar(multiplicar(dias, 24),
-////                multiplicar(segundosCount, segundosCount)) +
-////                multiplicar(horas, segundosCount) + multiplicar(minutos, segundosCount);
-//
-//
-////        horas = horas * 60 * 60;
-////        dias = dias * 24 * 60 * 60;
-////        return minutos + horas + dias + segundos;
-//
-//    }
-
-    //Una hora es = 3600s segundos
-// un minuto =  60s
-    //Dias = 86400;
     public static int QuansSegons(int dias, int horas, int minutos, int segundos) {
         horas *= 60 * 60;
         dias *= 24 * 60 * 60;
@@ -198,9 +164,6 @@ public class Main {
         //Ejercicio 1
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduce una cadena:");
-//        String longCadenada = teclado.nextLine();
-//        System.out.println("La longitud de la cadena es: " + longitud(longCadenada));
-
         //Ejercicio 2
         int a = 10;
         int b = 50;
@@ -217,30 +180,17 @@ public class Main {
         System.out.println("Introduce dos digitos para generar valores " +
                 "aleatorios, por ejemplo valores aleatorios del 5 al 15");
         int[] twoAleatory = new int[2];
-//        for (int i = 0; i < twoAleatory.length; i++) {
-//            System.out.println("Introduce un valor:");
-//            twoAleatory[i] = teclado.nextInt();
-//        }
-//        System.out.println(aleatorio(twoAleatory));
 
         //Ejercicio 4
         System.out.println(dau());
         //Ejercicio 5
         System.out.println(dos_dau());
         //Ejercicio 6
-//        double introDouble = teclado.nextDouble();
+
         double nuevoDouble = 15.6;
         int parInt = 6;
         System.out.println(par(nuevoDouble));
         System.out.println(par(parInt));
-
-        //Ejercicio 7
-//        System.out.println("Introcude tu dni sin letra");
-//        int dniVariable = teclado.nextInt();
-//        if (dniVariable <= 99999999)
-//            System.out.println("El NIF con la tetra :" + nif(dniVariable));
-//        else
-//            System.out.println("El NIF debe tener una longitud de 8 caracteres");
 
         //Ejercicio 8
         System.out.println(Arrays.toString(ordena_tres(5, 8, 1)));
@@ -255,14 +205,11 @@ public class Main {
         System.out.println(descuento(100, 10));
         System.out.println("Ejercicio 14");
         System.out.println(numLosas(15, 15, 30));
-
-
         //Ejercicio 16
         System.out.println("15");
-
         System.out.println(facturaTelefonica(15, 1, 5));
         System.out.println("16");
-//        System.out.println(QuansSegons(1, 1, 1, 1));
+
         System.out.println(QuansSegons(1, 1, 1, 1));
     }
 

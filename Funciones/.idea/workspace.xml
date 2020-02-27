@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e844c83-2136-435d-8345-a646b692f3d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Funciones_12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DesplazarArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Vecinos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Funciones/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Funciones/com/company/funciones_class.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/com/company/funciones_class.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejerciciosPOO/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ejerciciosPOO/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Funciones_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funciones_12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/funciones_clase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/funciones_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/funciones_class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/recursivo.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +125,10 @@
       <workItem from="1582435364110" duration="1360000" />
       <workItem from="1582470329722" duration="600000" />
       <workItem from="1582623711734" duration="2298000" />
-      <workItem from="1582708158901" duration="654000" />
+      <workItem from="1582708158901" duration="8271000" />
+      <workItem from="1582741727370" duration="1417000" />
+      <workItem from="1582745229946" duration="1772000" />
+      <workItem from="1582797301133" duration="119000" />
     </task>
     <servers />
   </component>
