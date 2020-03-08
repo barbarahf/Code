@@ -1,47 +1,7 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.ArrayList;
+import java.util.List;
 public class Vecinos {
-    //    public static String[] shuffle() {
-//        String[] characters = text.toCharArray();
-//        for (int i = 0; i < characters.length; i++) {
-//            int randomIndex = (int) (Math.random() * characters.length);
-//            String temp[] = characters[i];
-//            characters[i] = characters[randomIndex];
-//            characters[randomIndex] = temp;
-//        }
-//        return new String(characters);
-//    }
-//    private static void shuffleArray(int[] array) {
-//        int index, temp;
-//        Random random = new Random();
-//        for (int i = array.length - 1; i > 0; i--) {
-//            index = random.nextInt(i + 1);
-//            temp = array[index];
-//            array[index] = array[i];
-//            array[i] = temp;
-//        }
-//    }
-
-    /*
-    public static void shuffle() {
-        int index;
-        String temp;
-        String[] v = new String[]{"Adam", "Cora", "Dale", "Bill", "Erin"};
-        for (int i = v.length -1; i >0; i++) {
-            index = (int) (Math.random() * v.length);
-            temp = v[index];
-
-            String aux = v[randomIndex];
-            v[randomIndex] = v[randomIndex2];
-            v[randomIndex2] = aux;
-            System.out.println("Real prime numbers : " + Arrays.toString(v));
-
-        }
-
-    }
-*/
-    static String[] encontrarVecinos() {
+    static List<String> encontrarVecinos() {
         String[] v = new String[]{"Adam", "Cora", "Dale", "Bill", "Erin"};
         for (String vecinoTexto : v) {
             for (String vecinoTexto2 : v) {
@@ -58,8 +18,21 @@ public class Vecinos {
                             if (vecinoTexto5.equals(vecinoTexto) || vecinoTexto5.equals(vecinoTexto2) ||
                                     vecinoTexto5.equals(vecinoTexto3) || vecinoTexto5.equals(vecinoTexto4))
                                 continue;
-                            String[] posibles = new String[]{vecinoTexto, vecinoTexto2, vecinoTexto3, vecinoTexto4, vecinoTexto5};
-                            System.out.println(vecinoTexto + " " + vecinoTexto2 + " " + vecinoTexto3 + " " + vecinoTexto4 + " " + vecinoTexto5);
+//                            String[] posibles = new String[]{vecinoTexto, vecinoTexto2, vecinoTexto3, vecinoTexto4, vecinoTexto5};
+                            List<String> lista = new ArrayList<>();
+                            lista.add(vecinoTexto);
+                            lista.add(vecinoTexto2);
+                            lista.add(vecinoTexto3);
+                            lista.add(vecinoTexto4);
+                            lista.add(vecinoTexto5);
+                            List<String> filters = new ArrayList<>();
+                            if(satisfa(lista))
+                            System.out.println("culito");
+//                            filters.add(satisfa(list));
+//                            System.out.println("Original List " + list);
+////                            list.removeAll(filters);
+//                            System.out.println("Filtered List " + list);
+
                         }
                     }
                 }
@@ -67,38 +40,32 @@ public class Vecinos {
         }
         return null;
     }
-
-    /*
-    * Adam no viu a l’últim pis !v[4].equals(“Adam”) o pis(“Adam”) != 5
-    Bill no viu al primer pis !v[0].equals(“Bill”) o pis(“Bill”) != 1
-    Cora no viu ni al primer ni a l’últim pis
-    * /////////////
-    Dale viu en un pis que està per sobre del de Bill
-    Erin no viu en un pis al costat del pis on viu Cora (ni a sobre ni a sota d’ella)
-    Cora no viu en un pis al costat del pis de Bill (ni a sobre ni a sota d’aquest)
-    */
-    static boolean satisfa(String[] v) {
-        if (!v[4].equals("Adam") && !v[0].equals("Bill") && v[0].equals("Cora") && v[4].equals("Cora")) {
-            return true;
-        }
-        for (int i = 0; i < v.length; i++) {
-            for (int j = i + 1; j < v.length; j++) {
-                if(v[i].equals("Adam")) {
-
-                }
-            }
-        }
-
-        return true;
+    static boolean satisfa(List<String> v) {
+        return piso(v, "Adam") != 5 && piso(v, "Bill") != 1 &&
+                piso(v, "Cora") != 1 && piso(v, "Cora") != 5 &&
+                piso(v, "Dale") == piso(v, "Bill") + 1
+                && piso(v, "Erin") != piso(v, "Cora") + 1
+                && piso(v, "Erin") != piso(v, "Cora") - 1
+                && piso(v, "Cora") != piso(v, "Bill") + 1
+                && piso(v, "Cora") != piso(v, "Bill") - 1;
     }
-//    static int piso (String [] v, String ve){
-//
-//    }
 
+    static int piso(List<String> v, String veContString) {
+        for (int i = 0; i < v.size(); i++)
+            if (v.get(i).equals(veContString))
+                return i + 1;
+        return -1;
+    }
 
     public static void main(String[] args) {
-        encontrarVecinos();
-//        System.out.println(encontrarVecinos());
-        //shuffle();
+//        System.out.println(java.util.Arrays.toString(encontrarVecinos()));
     }
 }
+
+/*
+*     return !v[4].equals("Adam") && !v[0].equals("Bill") && v[0].equals("Cora") && v[4].equals("Cora") &&
+                v[piso(v, "Dale")].equals("Dale") == v[piso(v, "Bill") + 1].equals("Bill")
+                && v[piso(v, "Erin")] != v[piso(v, "Cora") + 1]
+                && v[piso(v, "Erin")] != v[piso(v, "Cora") - 1]
+                && v[piso(v, "Cora")] != v[piso(v, "Bill") + 1]
+                && v[piso(v, "Cora")] != v[piso(v, "Bill") - 1];*/

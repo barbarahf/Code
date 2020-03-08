@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e844c83-2136-435d-8345-a646b692f3d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/VecinosPosibles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TiempoEjecucion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Funciones/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Funciones/Vecinos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/Vecinos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Funciones/VecinosPosibles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/VecinosPosibles.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Funciones/com/company/funciones_class.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/com/company/funciones_class.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DesplazarArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesplazarArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Funciones_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funciones_12.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Vecinos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vecinos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VecinosPosibles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VecinosPosibles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/funciones_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/funciones_class.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.VecinosPosibles">
+  <component name="RunManager" selected="Application.Funciones_12">
     <configuration name="DesplazarArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DesplazarArray" />
       <module name="Funciones" />
@@ -59,16 +62,6 @@
     <configuration name="Funciones_12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Funciones_12" />
       <module name="Funciones" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="Funciones" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -87,13 +80,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="funciones_class" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.funciones_class" />
+      <module name="Funciones" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Funciones_12" />
         <item itemvalue="Application.VecinosPosibles" />
+        <item itemvalue="Application.funciones_class" />
         <item itemvalue="Application.Vecinos" />
         <item itemvalue="Application.DesplazarArray" />
-        <item itemvalue="Application.Funciones_12" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +146,26 @@
       <workItem from="1582842883911" duration="2758000" />
       <workItem from="1582900666662" duration="6294000" />
       <workItem from="1582907571714" duration="1983000" />
-      <workItem from="1582914184091" duration="4550000" />
+      <workItem from="1582914184091" duration="10126000" />
+      <workItem from="1582940033893" duration="600000" />
+      <workItem from="1583064002800" duration="14609000" />
+      <workItem from="1583081810844" duration="219000" />
+      <workItem from="1583096835427" duration="3382000" />
+      <workItem from="1583163302910" duration="54000" />
+      <workItem from="1583164888976" duration="40000" />
+      <workItem from="1583170735523" duration="2158000" />
+      <workItem from="1583172942271" duration="1326000" />
+      <workItem from="1583266901467" duration="4929000" />
+      <workItem from="1583281282720" duration="600000" />
+      <workItem from="1583315046820" duration="6742000" />
+      <workItem from="1583340095239" duration="2757000" />
+      <workItem from="1583346617987" duration="3583000" />
+      <workItem from="1583436867682" duration="4000" />
+      <workItem from="1583505180633" duration="7105000" />
+      <workItem from="1583574303917" duration="2581000" />
+      <workItem from="1583601028433" duration="1408000" />
+      <workItem from="1583694839101" duration="617000" />
+      <workItem from="1583707100828" duration="818000" />
     </task>
     <servers />
   </component>
@@ -164,44 +189,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../Practicas/combinaciones.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/src/com/company/funciones_class.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../Practicas/combinaciones.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../Practicas/combinaciones.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../Practicas/combinaciones.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../Practicas/combinaciones.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../Practicas/combinaciones.java</url>
-          <line>11</line>
+          <url>jar://C:/Program Files/Java/jdk-13.0.1/lib/src.zip!/java.base/java/lang/String.java</url>
+          <line>1020</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../Practicas/combinaciones.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../Practicas/combinaciones.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

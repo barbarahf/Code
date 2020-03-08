@@ -17,7 +17,29 @@ public class funciones_class {
         return max2(max2(a, b), max2(c, d));
     }
 
-    public static void main(String[] args) {
+    static boolean satisfa(String[] v) {
+        return piso(v, "Adam") == piso(v, "Adams")+1;
 
+    }
+
+    static int piso(String[] v, String veContString) {
+        for (int i = 0; i < v.length; i++)
+            if (v[i].equals(veContString))
+                return i + 1;
+        return -1;
+    }
+
+    static String[] encontrarVecinos() {
+        String[] vecinosEncontrados = new String[]{};
+        String[] vecinos = new String[]{"hol","Adams","Adam"};
+        if (satisfa(vecinos)) {
+            vecinosEncontrados = vecinos;
+            return vecinosEncontrados;
+        }
+        return null;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(java.util.Arrays.toString(encontrarVecinos()));
     }
 }
