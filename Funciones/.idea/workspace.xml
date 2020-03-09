@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e844c83-2136-435d-8345-a646b692f3d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/TiempoEjecucion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Funciones/Vecinos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/Vecinos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Funciones/VecinosPosibles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/VecinosPosibles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Funciones/com/company/funciones_class.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/com/company/funciones_class.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Funciones_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funciones_12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vecinos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vecinos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VecinosPosibles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VecinosPosibles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/funciones_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/funciones_class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TiempoEjecucion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TiempoEjecucion.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,16 +45,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Funciones_12">
-    <configuration name="DesplazarArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DesplazarArray" />
+  <component name="RunManager" selected="Application.TiempoEjecucion">
+    <configuration name="Funciones_12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Funciones_12" />
       <module name="Funciones" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Funciones_12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Funciones_12" />
+    <configuration name="TiempoEjecucion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TiempoEjecucion" />
       <module name="Funciones" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,11 +89,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TiempoEjecucion" />
         <item itemvalue="Application.Funciones_12" />
         <item itemvalue="Application.VecinosPosibles" />
         <item itemvalue="Application.funciones_class" />
         <item itemvalue="Application.Vecinos" />
-        <item itemvalue="Application.DesplazarArray" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +159,8 @@
       <workItem from="1583574303917" duration="2581000" />
       <workItem from="1583601028433" duration="1408000" />
       <workItem from="1583694839101" duration="617000" />
-      <workItem from="1583707100828" duration="818000" />
+      <workItem from="1583707100828" duration="3483000" />
+      <workItem from="1583747073237" duration="1388000" />
     </task>
     <servers />
   </component>

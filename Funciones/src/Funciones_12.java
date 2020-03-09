@@ -120,6 +120,7 @@ public class Funciones_12 {
     }
 
     //Ejercicio 15
+    //11 nanosegundos
     static int max(int v[]) {
         int[] value = new int[v.length];
         System.arraycopy(v, 0, value, 0, v.length);
@@ -128,8 +129,20 @@ public class Funciones_12 {
         return max;
     }
 
+
+    //8 nanosegundos
     static int maxim(int v[]) {
         int maxValue = v[0];
+        for (int i = 0; i < v.length; i++) {
+            if (v[i] > maxValue)
+                maxValue = v[i];
+        }
+        return maxValue;
+    }
+
+    //Sobrecarga de metodos
+    static double maxim(double v[]) {
+        double maxValue = v[0];
         for (int i = 0; i < v.length; i++) {
             if (v[i] > maxValue)
                 maxValue = v[i];
@@ -184,12 +197,20 @@ public class Funciones_12 {
     static double mitja(long[] vector) {
         return suma(vector) / vector.length;
     }
+
     //Ejercicio 20
+    long tiempoMs = System.currentTimeMillis();
+    long tiempoNs = System.nanoTime();
+
+    static double vecMillon() {
+        double[] vecMillion = new double[1000000];
+        for (int n = 0; n < vecMillion.length; n++) {
+            vecMillion[n] = (int) (Math.random() * (1 - 0 + 1) + 0);
+        }
+        return maxim(vecMillion);
+    }
 
     public static void main(String[] args) {
 
-        System.out.println(mataBruixes("“=(=(=()=)=)="));
-        long vduo[] = {5, 8, 10};
-        System.out.println(mitja(vduo));
     }
 }
