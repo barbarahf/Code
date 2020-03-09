@@ -131,7 +131,7 @@ public class Funciones_12 {
 
 
     //8 nanosegundos
-    static int maxim(int v[]) {
+    static int max_sort(int v[]) {
         int maxValue = v[0];
         for (int i = 0; i < v.length; i++) {
             if (v[i] > maxValue)
@@ -141,7 +141,7 @@ public class Funciones_12 {
     }
 
     //Sobrecarga de metodos
-    static double maxim(double v[]) {
+    static double max_sort(double v[]) {
         double maxValue = v[0];
         for (int i = 0; i < v.length; i++) {
             if (v[i] > maxValue)
@@ -199,18 +199,50 @@ public class Funciones_12 {
     }
 
     //Ejercicio 20
-    long tiempoMs = System.currentTimeMillis();
-    long tiempoNs = System.nanoTime();
-
     static double vecMillon() {
         double[] vecMillion = new double[1000000];
         for (int n = 0; n < vecMillion.length; n++) {
             vecMillion[n] = (int) (Math.random() * (1 - 0 + 1) + 0);
         }
-        return maxim(vecMillion);
+        return max(vecMillion);
     }
 
+    //Ejercicio 21
+    static int[] gira_vector(int[] vec) {
+        int n, m = 0;
+        int aux;
+        for (n = 0, m = vec.length - 1; n < vec.length / 2; n++, m--) {
+            aux = vec[n];
+            vec[n] = vec[m];
+            vec[m] = aux;
+        }
+        return vec;
+    }
+//    System.arraycopy(v, 0, value, 0, v.length);
+    //Ejercicio 22
+    public static int[] add(int[] first, int[] second) {
+        int length = first.length < second.length ? first.length : second.length;
+        int[] result = new int[length];
+        for (int i = 0; i < length; i++) {
+            result[i] = first[i] + second[i];
+        }
+        return result;
+    }
+    //Ejercicio 23
+
+
     public static void main(String[] args) {
+        long tiempoMs = System.currentTimeMillis();
+        long tiempoNs = System.nanoTime();
+        //Ejercicio 20
+        System.out.println("Mayor= " + vecMillon() + " tiempo invertido = " + (System.currentTimeMillis() - tiempoMs) + "Ms");
+        int[] vecto = {1, 8, 9, 2, 3, 7, 5};
+        System.out.println(Arrays.toString(vecto));
+        System.out.println(Arrays.toString(gira_vector(vecto)));
+        int v1[] = {5, 8, 5, 5};
+        int v2[] = {2, 9};
+        System.out.println(Arrays.toString(add(v1, v2)));
+
 
     }
 }
