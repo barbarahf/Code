@@ -218,31 +218,107 @@ public class Funciones_12 {
         }
         return vec;
     }
-//    System.arraycopy(v, 0, value, 0, v.length);
+
     //Ejercicio 22
     public static int[] add(int[] first, int[] second) {
-        int length = first.length < second.length ? first.length : second.length;
-        int[] result = new int[length];
-        for (int i = 0; i < length; i++) {
+        int lengthMax = first.length > second.length ? first.length : second.length;
+        int lengthMin = first.length < second.length ? first.length : second.length;
+        int[] result = new int[lengthMax];
+        int[] copiaMax = new int[lengthMax];
+        if (first.length > second.length)
+            System.arraycopy(first, 0, copiaMax, 0, first.length);
+        else
+            System.arraycopy(second, 0, copiaMax, 0, second.length);
+        for (int i = 0; i < lengthMin; i++) {
             result[i] = first[i] + second[i];
+            for (int j = lengthMin; j < lengthMax; j++) {
+                result[j] = copiaMax[j];
+
+            }
         }
+
         return result;
     }
-    //Ejercicio 23
 
+    //Ejercicio 23
+    static int[] crea_vector(int min, int max, int num_valors) {
+        int[] vector = new int[num_valors];
+        if (min > max) {
+            int aux = min;
+            min = max;
+            max = aux;
+        }
+        for (int n = 0; n < vector.length; n++) {
+            vector[n] = (int) (Math.random() * (max - min + 1) + min);
+        }
+        return vector;
+    }
+
+    //Ejercicio 24
+    static int posicio(int[] v, int x) {
+        for (int i = 0; i < v.length; i++)
+            if (v[i] == v[x])
+                return v[i];
+        return -1;
+
+    }
+
+    //Ejercicio 25
+
+
+    static int quants(int[] v, int x) {
+        int contador = 0;
+        for (int i = 0; i < v.length; i++)
+            if (v[i] == x)
+                contador++;
+        return contador;
+
+    }
+
+    //Ejercicio 26
+    //Ejemplo
+    static boolean isPrime(int n, int i) {
+        if (n <= 2)
+            return (n == 2) ? true : false;
+        if (n % i == 0)
+            return false;
+        if (i * i > n)
+            return true;
+        // Recursividad para calular el siguiente
+        return isPrime(n, i + 1);
+    }
+//        String numeros = Integer.toString(num_primers);
+//        for (int i = 0; i < numeros.length(); i++) {
+//            char charNumbers = numeros.charAt(i);
+//            int n = Character.getNumericValue(charNumbers);
+
+    static long[] vec_primers(int num_primers) {
+        long[] primos = new long[0];
+        for (int i = 1; i < num_primers; i++) {
+            int contador = 0;
+            for (int j = 1; j <= i; j++) {
+                if (i % j == 0)
+                    contador++;
+            }
+            if (contador == 2) {
+                System.out.println(i);
+                primos = new long[i];
+                for (int k = 0; k < primos.length; k++) {
+                    primos[k] = i;
+                }
+            }
+        }
+        return primos;
+    }
 
     public static void main(String[] args) {
-        long tiempoMs = System.currentTimeMillis();
-        long tiempoNs = System.nanoTime();
-        //Ejercicio 20
-        System.out.println("Mayor= " + vecMillon() + " tiempo invertido = " + (System.currentTimeMillis() - tiempoMs) + "Ms");
-        int[] vecto = {1, 8, 9, 2, 3, 7, 5};
-        System.out.println(Arrays.toString(vecto));
-        System.out.println(Arrays.toString(gira_vector(vecto)));
-        int v1[] = {5, 8, 5, 5};
-        int v2[] = {2, 9};
-        System.out.println(Arrays.toString(add(v1, v2)));
-
-
+        int holi[] = {1, 2, 8, 9, 2, 2};
+//        System.out.println(posicio(holi, 0));
+//        System.out.println(quants(holi, 2));
+//        int n = 7;
+//        if (isPrime(n, 2)) System.out.println("Yes");
+//        else
+//            System.out.println("No");
+        System.out.println(Arrays.toString(vec_primers(10)));
     }
 }

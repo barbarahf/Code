@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e844c83-2136-435d-8345-a646b692f3d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Color.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Funciones_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funciones_12.java" afterDir="false" />
@@ -160,7 +161,13 @@
       <workItem from="1583694839101" duration="617000" />
       <workItem from="1583707100828" duration="3483000" />
       <workItem from="1583747073237" duration="10557000" />
-      <workItem from="1583768411579" duration="1111000" />
+      <workItem from="1583768411579" duration="3686000" />
+      <workItem from="1583778065464" duration="4020000" />
+      <workItem from="1583788213514" duration="1663000" />
+      <workItem from="1583839263644" duration="747000" />
+      <workItem from="1583866844899" duration="1356000" />
+      <workItem from="1583914513560" duration="10429000" />
+      <workItem from="1583927492886" duration="1243000" />
     </task>
     <servers />
   </component>
