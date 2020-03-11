@@ -346,17 +346,12 @@ public class Funciones_12 {
     /*tots els elements del vector en posicions iguals o superiors a p
 una posició cap a la dreta, i l’últim element del vector es perdrà.*/
     static void inserta(int[] v, int x, int p) {
-        int temp;
         int[] copyV = Arrays.copyOf(v, v.length);
-        for (int i = v[p]; v[p] < v.length; i++) {
-//            temp = v[i];
+        for (int i = v[p], k = v[p]; i < v.length; i++, k++) {
             v[p] = x;
-            v[i] = copyV[p];
-
+            v[i] = copyV[k];
         }
         System.out.println(Arrays.toString(v));
-
-//        System.out.println(Arrays.toString(copyV));
     }
 
 //Chuleta --> subString CharAt --> Numeros primos OJO --> Practica metodo main
@@ -368,7 +363,7 @@ una posició cap a la dreta, i l’últim element del vector es perdrà.*/
 //        ejemplo = vectorPrimos(1000000);
 //        System.out.println("Tiempo invertido = " + (System.currentTimeMillis() - tiempoMs));
         int nuevoEjemplo[] = {1, 2, 3, 4, 5, 6, 7};
-        inserta(nuevoEjemplo, 9, 2);
-
+        inserta(nuevoEjemplo, 9, 6);
+        //Si es el primero y el ultimo falla
     }
 }
