@@ -274,30 +274,28 @@ public class Funciones_12 {
     }
 
     //Ejercicio 26
-    //Ejemplo
-
-    static boolean esPrimo(long n){
+    static boolean esPrimo(long n) {
         if (n <= 2)
             return n == 2;
-        if (n%2==0)
+        if (n % 2 == 0)
             return false;
-        long sq=(long)Math.sqrt(n);
-        for (int m=3;m<=sq;m+=2)
-            if (n%m==0)
+        long sq = (long) Math.sqrt(n);
+        for (int m = 3; m <= sq; m += 2)
+            if (n % m == 0)
                 return false;
         return true;
 
     }
 
-    private static long[] vectorPrimos(int n){
+    private static long[] vectorPrimos(int n) {
         long[] primos = new long[n];
-        primos[0]=2;
-        long provar=3;
-        int num_primos=1;
-        while(provar <= n){
+        primos[0] = 2;
+        long provar = 3;
+        int num_primos = 1;
+        while (provar <= n) {
             if (esPrimo(provar))
                 primos[num_primos++] = provar;
-            provar+=2;
+            provar += 2;
         }
         return Arrays.copyOf(primos, num_primos);
     }
@@ -335,11 +333,6 @@ public class Funciones_12 {
         return newPrimos;
     }
 
-    /*Programeu una funció static void inserta(int [] v, int x, int p) que insereix al vector v
-el valor x a la posició p (desplaçament sobre el vector). Evidentment, en inserir un element en
-un vector, hem de desplaçar tots els elements del vector en posicions iguals o superiors a p
-una posició cap a la dreta, i l’últim element del vector es perdrà. S’indica un possible exemple
-d’execució de la funció:*/
     /*int temp;
         for (int i = 1; i < array.length; i++) {
             for (int j = i; j > 0; j--) {
@@ -350,28 +343,32 @@ d’execució de la funció:*/
                 }
             }
  */
-//    static void inserta(int[] v, int x, int p) {
-//        int save[];
-//        int[] copyV = Arrays.copyOf(v, v.length);
-//        for (int j = copyV.length - 1; j > 0; j--) {
-//            save[p] =
-//            copyV[p] = x;
-//
-////            copyV[j] = copyV[j-1];
-//        }
-////        }
+    /*tots els elements del vector en posicions iguals o superiors a p
+una posició cap a la dreta, i l’últim element del vector es perdrà.*/
+    static void inserta(int[] v, int x, int p) {
+        int temp;
+        int[] copyV = Arrays.copyOf(v, v.length);
+        for (int i = v[p]; v[p] < v.length; i++) {
+//            temp = v[i];
+            v[p] = x;
+            v[i] = copyV[p];
+
+        }
+        System.out.println(Arrays.toString(v));
+
 //        System.out.println(Arrays.toString(copyV));
-//    }
+    }
 
 //Chuleta --> subString CharAt --> Numeros primos OJO --> Practica metodo main
 
     //Ejercicio 7
     public static void main(String[] args) {
-        long [] ejemplo;
-        long tiempoMs = System.currentTimeMillis();
-        ejemplo=vectorPrimos(1000000);
-        System.out.println("Tiempo invertido = " + (System.currentTimeMillis() - tiempoMs));
-
+//        long[] ejemplo;
+//        long tiempoMs = System.currentTimeMillis();
+//        ejemplo = vectorPrimos(1000000);
+//        System.out.println("Tiempo invertido = " + (System.currentTimeMillis() - tiempoMs));
+        int nuevoEjemplo[] = {1, 2, 3, 4, 5, 6, 7};
+        inserta(nuevoEjemplo, 9, 2);
 
     }
 }
