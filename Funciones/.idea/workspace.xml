@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e844c83-2136-435d-8345-a646b692f3d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Color.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Funciones/DesplazarArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/DesplazarArray.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DesplazarArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesplazarArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Funciones_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funciones_12.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,6 +47,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Funciones_12">
+    <configuration name="DesplazarArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DesplazarArray" />
+      <module name="Funciones" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Funciones_12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Funciones_12" />
       <module name="Funciones" />
@@ -55,13 +63,6 @@
     </configuration>
     <configuration name="TiempoEjecucion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TiempoEjecucion" />
-      <module name="Funciones" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Vecinos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Vecinos" />
       <module name="Funciones" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,10 +91,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Funciones_12" />
+        <item itemvalue="Application.DesplazarArray" />
         <item itemvalue="Application.TiempoEjecucion" />
         <item itemvalue="Application.VecinosPosibles" />
         <item itemvalue="Application.funciones_class" />
-        <item itemvalue="Application.Vecinos" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +168,12 @@
       <workItem from="1583839263644" duration="747000" />
       <workItem from="1583866844899" duration="1356000" />
       <workItem from="1583914513560" duration="10429000" />
-      <workItem from="1583927492886" duration="1243000" />
+      <workItem from="1583927492886" duration="2851000" />
+      <workItem from="1583931296997" duration="970000" />
+      <workItem from="1583934922208" duration="917000" />
+      <workItem from="1583939234128" duration="3722000" />
+      <workItem from="1583948360057" duration="608000" />
+      <workItem from="1583949004486" duration="3749000" />
     </task>
     <servers />
   </component>

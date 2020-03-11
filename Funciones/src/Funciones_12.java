@@ -264,8 +264,6 @@ public class Funciones_12 {
     }
 
     //Ejercicio 25
-
-
     static int quants(int[] v, int x) {
         int contador = 0;
         for (int i = 0; i < v.length; i++)
@@ -277,6 +275,33 @@ public class Funciones_12 {
 
     //Ejercicio 26
     //Ejemplo
+
+    static boolean esPrimo(long n){
+        if (n <= 2)
+            return n == 2;
+        if (n%2==0)
+            return false;
+        long sq=(long)Math.sqrt(n);
+        for (int m=3;m<=sq;m+=2)
+            if (n%m==0)
+                return false;
+        return true;
+
+    }
+
+    private static long[] vectorPrimos(int n){
+        long[] primos = new long[n];
+        primos[0]=2;
+        long provar=3;
+        int num_primos=1;
+        while(provar <= n){
+            if (esPrimo(provar))
+                primos[num_primos++] = provar;
+            provar+=2;
+        }
+        return Arrays.copyOf(primos, num_primos);
+    }
+
     static boolean isPrime(int n, int i) {
         if (n <= 2)
             return (n == 2) ? true : false;
@@ -287,13 +312,14 @@ public class Funciones_12 {
         // Recursividad para calular el siguiente
         return isPrime(n, i + 1);
     }
-//        String numeros = Integer.toString(num_primers);
-//        for (int i = 0; i < numeros.length(); i++) {
-//            char charNumbers = numeros.charAt(i);
-//            int n = Character.getNumericValue(charNumbers);
 
+    //        String numeros = Integer.toString(num_primers);
+    //        for (int i = 0; i < numeros.length(); i++) {
+    //            char charNumbers = numeros.charAt(i);
+    //            int n = Character.getNumericValue(charNumbers);
     static long[] vec_primers(int num_primers) {
-        long[] primos = new long[0];
+        int n = 0;
+        long[] primos = new long[num_primers];
         for (int i = 1; i < num_primers; i++) {
             int contador = 0;
             for (int j = 1; j <= i; j++) {
@@ -301,24 +327,51 @@ public class Funciones_12 {
                     contador++;
             }
             if (contador == 2) {
-                System.out.println(i);
-                primos = new long[i];
-                for (int k = 0; k < primos.length; k++) {
-                    primos[k] = i;
-                }
+                primos[n] = i;
+                n++;
             }
         }
-        return primos;
+        long[] newPrimos = Arrays.copyOf(primos, n);
+        return newPrimos;
     }
 
+    /*Programeu una funció static void inserta(int [] v, int x, int p) que insereix al vector v
+el valor x a la posició p (desplaçament sobre el vector). Evidentment, en inserir un element en
+un vector, hem de desplaçar tots els elements del vector en posicions iguals o superiors a p
+una posició cap a la dreta, i l’últim element del vector es perdrà. S’indica un possible exemple
+d’execució de la funció:*/
+    /*int temp;
+        for (int i = 1; i < array.length; i++) {
+            for (int j = i; j > 0; j--) {
+                if (array[j] < array[j - 1]) {
+                    temp = array[j];
+                    array[j] = array[j - 1];
+                    array[j - 1] = temp;
+                }
+            }
+ */
+//    static void inserta(int[] v, int x, int p) {
+//        int save[];
+//        int[] copyV = Arrays.copyOf(v, v.length);
+//        for (int j = copyV.length - 1; j > 0; j--) {
+//            save[p] =
+//            copyV[p] = x;
+//
+////            copyV[j] = copyV[j-1];
+//        }
+////        }
+//        System.out.println(Arrays.toString(copyV));
+//    }
+
+//Chuleta --> subString CharAt --> Numeros primos OJO --> Practica metodo main
+
+    //Ejercicio 7
     public static void main(String[] args) {
-        int holi[] = {1, 2, 8, 9, 2, 2};
-//        System.out.println(posicio(holi, 0));
-//        System.out.println(quants(holi, 2));
-//        int n = 7;
-//        if (isPrime(n, 2)) System.out.println("Yes");
-//        else
-//            System.out.println("No");
-        System.out.println(Arrays.toString(vec_primers(10)));
+        long [] ejemplo;
+        long tiempoMs = System.currentTimeMillis();
+        ejemplo=vectorPrimos(1000000);
+        System.out.println("Tiempo invertido = " + (System.currentTimeMillis() - tiempoMs));
+
+
     }
 }
