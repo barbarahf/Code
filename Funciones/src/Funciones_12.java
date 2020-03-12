@@ -300,6 +300,7 @@ public class Funciones_12 {
         return Arrays.copyOf(primos, num_primos);
     }
 
+    ////////////////////^^^^
     static boolean isPrime(int n, int i) {
         if (n <= 2)
             return (n == 2) ? true : false;
@@ -347,9 +348,11 @@ public class Funciones_12 {
 una posició cap a la dreta, i l’últim element del vector es perdrà.*/
     static void inserta(int[] v, int x, int p) {
         int[] copyV = Arrays.copyOf(v, v.length);
+        if (v[v.length - 1] == v[p])
+            v[v.length - 1] = x;
         for (int i = v[p], k = v[p]; i < v.length; i++, k++) {
             v[p] = x;
-            v[i] = copyV[k];
+            v[i] = copyV[k - 1];
         }
         System.out.println(Arrays.toString(v));
     }
@@ -363,7 +366,7 @@ una posició cap a la dreta, i l’últim element del vector es perdrà.*/
 //        ejemplo = vectorPrimos(1000000);
 //        System.out.println("Tiempo invertido = " + (System.currentTimeMillis() - tiempoMs));
         int nuevoEjemplo[] = {1, 2, 3, 4, 5, 6, 7};
-        inserta(nuevoEjemplo, 9, 6);
+        inserta(nuevoEjemplo, 999, 6);
         //Si es el primero y el ultimo falla
     }
 }
