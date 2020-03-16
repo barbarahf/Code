@@ -129,7 +129,6 @@ public class Funciones_12 {
         return max;
     }
 
-
     //8 nanosegundos
     static int max_sort(int v[]) {
         int maxValue = v[0];
@@ -220,7 +219,7 @@ public class Funciones_12 {
     }
 
     //Ejercicio 22
-    public static int[] add(int[] first, int[] second) {
+    public static int[] suma_vectors(int[] first, int[] second) {
         int lengthMax = first.length > second.length ? first.length : second.length;
         int lengthMin = first.length < second.length ? first.length : second.length;
         int[] result = new int[lengthMax];
@@ -344,8 +343,7 @@ public class Funciones_12 {
                 }
             }
  */
-    /*tots els elements del vector en posicions iguals o superiors a p
-una posició cap a la dreta, i l’últim element del vector es perdrà.*/
+
     static void inserta(int[] v, int x, int p) {
         int[] copyV = Arrays.copyOf(v, v.length);
         if (v[v.length - 1] == v[p])
@@ -359,14 +357,40 @@ una posició cap a la dreta, i l’últim element del vector es perdrà.*/
 
 //Chuleta --> subString CharAt --> Numeros primos OJO --> Practica metodo main
 
-    //Ejercicio 7
+    //Ejercicio 28
+ /*
+– Programeu una funció static boolean conte(int[] v, int[] v_dins) que retornarà true si
+el vector v conté el vector v_dins, és a dir, si tots els elements de v_dins estan consecutius
+en v. El procés seria buscar en v l’element v_dins[0], i un cop trobat, entrar en un bucle per
+buscar a continuació la resta dels elements de v_dins. Si algú dels elements següents no es
+troba dins de v, trencaríem el bucle amb un break i compararíem el següent valor.
+  */
+    static boolean conte(int[] v, int[] v_dins) {
+        boolean result = false;
+        for (int m = 0; m < v.length; m++) {
+            while(v[m] != v_dins[0])
+               m++;
+            for (int v_din : v_dins) {
+                if (v[m] == v_din) {
+                    int soylaputaama = v[m];
+                    m++;
+                }
+            }
+            break;
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
 //        long[] ejemplo;
-//        long tiempoMs = System.currentTimeMillis();
-//        ejemplo = vectorPrimos(1000000);
-//        System.out.println("Tiempo invertido = " + (System.currentTimeMillis() - tiempoMs));
-        int nuevoEjemplo[] = {1, 2, 3, 4, 5, 6, 7};
-        inserta(nuevoEjemplo, 999, 6);
-        //Si es el primero y el ultimo falla
+        //        ejemplo = vectorPrimos(1000000);
+
+        long tiempoMs = System.currentTimeMillis();
+        System.out.println("Tiempo invertido = " + (System.currentTimeMillis() - tiempoMs));
+
+        int buscarEnV[] = {1, 5, 8, 10, 11, 12, 13, 14, 9, 6};
+        int v_dins[] = {10, 11, 12, 13, 10};
+        System.out.println(conte(buscarEnV, v_dins));
+
     }
 }

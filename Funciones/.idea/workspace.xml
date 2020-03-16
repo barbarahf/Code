@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8e844c83-2136-435d-8345-a646b692f3d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Funciones_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funciones_12.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -175,6 +177,11 @@
       <workItem from="1583957630643" duration="990000" />
       <workItem from="1583968445196" duration="1350000" />
       <workItem from="1583972611492" duration="1974000" />
+      <workItem from="1584147169167" duration="663000" />
+      <workItem from="1584204800645" duration="4341000" />
+      <workItem from="1584210906618" duration="9335000" />
+      <workItem from="1584307032415" duration="8098000" />
+      <workItem from="1584359935244" duration="1209000" />
     </task>
     <servers />
   </component>
