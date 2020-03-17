@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e844c83-2136-435d-8345-a646b692f3d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Borrar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Remaster.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Funciones_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funciones_12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vecinos.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Funciones_12">
+  <component name="RunManager" selected="Application.Remaster">
     <configuration name="DesplazarArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DesplazarArray" />
       <module name="Funciones" />
@@ -54,6 +57,13 @@
     </configuration>
     <configuration name="Funciones_12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Funciones_12" />
+      <module name="Funciones" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Remaster" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Remaster" />
       <module name="Funciones" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,26 +83,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="funciones_class" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.funciones_class" />
-      <module name="Funciones" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Remaster" />
         <item itemvalue="Application.Funciones_12" />
         <item itemvalue="Application.DesplazarArray" />
         <item itemvalue="Application.TiempoEjecucion" />
         <item itemvalue="Application.VecinosPosibles" />
-        <item itemvalue="Application.funciones_class" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +178,11 @@
       <workItem from="1584204800645" duration="4341000" />
       <workItem from="1584210906618" duration="9335000" />
       <workItem from="1584307032415" duration="8098000" />
-      <workItem from="1584359935244" duration="1209000" />
+      <workItem from="1584359935244" duration="5055000" />
+      <workItem from="1584376501605" duration="5253000" />
+      <workItem from="1584387825823" duration="10018000" />
+      <workItem from="1584454415497" duration="582000" />
+      <workItem from="1584455374880" duration="3594000" />
     </task>
     <servers />
   </component>
@@ -204,11 +205,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/funciones_class.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://C:/Program Files/Java/jdk-13.0.1/lib/src.zip!/java.base/java/lang/String.java</url>
           <line>1020</line>
