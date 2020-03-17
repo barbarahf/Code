@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e844c83-2136-435d-8345-a646b692f3d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Borrar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Remaster.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Funciones/Remaster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/Remaster.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Borrar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Borrar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Funciones_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funciones_12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vecinos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Remaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Remaster.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +31,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="Z:/Objectos" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -48,6 +49,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Remaster">
+    <configuration name="Borrar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Borrar" />
+      <module name="Funciones" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DesplazarArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DesplazarArray" />
       <module name="Funciones" />
@@ -76,20 +84,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VecinosPosibles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="VecinosPosibles" />
-      <module name="Funciones" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Remaster" />
+        <item itemvalue="Application.Borrar" />
         <item itemvalue="Application.Funciones_12" />
         <item itemvalue="Application.DesplazarArray" />
         <item itemvalue="Application.TiempoEjecucion" />
-        <item itemvalue="Application.VecinosPosibles" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +183,7 @@
       <workItem from="1584376501605" duration="5253000" />
       <workItem from="1584387825823" duration="10018000" />
       <workItem from="1584454415497" duration="582000" />
-      <workItem from="1584455374880" duration="3594000" />
+      <workItem from="1584455374880" duration="13685000" />
     </task>
     <servers />
   </component>

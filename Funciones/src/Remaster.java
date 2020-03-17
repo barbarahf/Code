@@ -216,10 +216,26 @@ public class Remaster {
         }
         return vec;
     }
+
     //Ejercicio 22
+    public static int[] suma_vectors(int[] v1, int[] v2) {
+        if (v1.length > v2.length) {
+            int aux[] = v1;
+            v1 = v2;
+            v2 = aux;
+        }
+        int min = v1.length;
+        int max = v2.length;
+        int[] nuevo = new int[max];
+        for (int i = 0; i < min; i++) {
+            nuevo[i] = v1[i] + v2[i];
+            System.arraycopy(v2, min, nuevo, min, max - min);
+        }
+        return nuevo;
+    }
+    //Ejercicio 23
 
     public static void main(String[] args) {
-        int buscarEnV[] = {1, 5, 8, 10, 11, 12, 13, 14, 9, 6};
-        System.out.println(Arrays.toString(gira_vector(buscarEnV)));
+
     }
 }

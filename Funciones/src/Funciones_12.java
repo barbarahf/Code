@@ -236,7 +236,6 @@ public class Funciones_12 {
 
             }
         }
-
         return result;
     }
 
@@ -379,9 +378,9 @@ public class Funciones_12 {
     public static void main(String[] args) {
 //        long[] ejemplo;
         //        ejemplo = vectorPrimos(1000000);
-
-        long tiempoMs = System.currentTimeMillis();
-        System.out.println("Tiempo invertido = " + (System.currentTimeMillis() - tiempoMs));
+//
+//        long tiempoMs = System.currentTimeMillis();
+//        System.out.println("Tiempo invertido = " + (System.currentTimeMillis() - tiempoMs));
 
         int buscarEnV[] = {1, 5, 8, 10, 11, 12, 13, 14, 9, 6};
         int v_dins[] = {10, 11, 12, 13, 10};
