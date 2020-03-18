@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8e844c83-2136-435d-8345-a646b692f3d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Funciones/Borrar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/Borrar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Funciones/Remaster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/Remaster.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Borrar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Borrar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funciones_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funciones_12.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Remaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Remaster.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,7 +48,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Remaster">
+  <component name="RunManager" selected="Application.Borrar">
     <configuration name="Borrar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Borrar" />
       <module name="Funciones" />
@@ -86,9 +86,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Borrar" />
         <item itemvalue="Application.Remaster" />
         <item itemvalue="Application.Funciones_12" />
-        <item itemvalue="Application.Borrar" />
         <item itemvalue="Application.DesplazarArray" />
         <item itemvalue="Application.TiempoEjecucion" />
       </list>
@@ -183,7 +183,9 @@
       <workItem from="1584376501605" duration="5253000" />
       <workItem from="1584387825823" duration="10018000" />
       <workItem from="1584454415497" duration="582000" />
-      <workItem from="1584455374880" duration="24493000" />
+      <workItem from="1584455374880" duration="25159000" />
+      <workItem from="1584535384289" duration="1046000" />
+      <workItem from="1584542699850" duration="6086000" />
     </task>
     <servers />
   </component>

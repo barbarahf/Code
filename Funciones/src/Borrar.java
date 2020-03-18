@@ -9,23 +9,27 @@ troba dins de v, trencaríem el bucle amb un break i compararíem el següent va
 * */
 public class Borrar {
     static boolean conte(int[] v, int[] v_dins) {
-        int[] aux = new int[v_dins.length];
-        for (int m = 0; m < v.length; m++) {
-            while (v[m] != v_dins[0])
-                m++;
-            for (int v_din : v_dins) {
-                if (v[m] == v_din) {
-                    int auxi = v[m];
-                    m++;
+        boolean aux = false;
+        for (int p = 0; p < v.length; p++) {
+            if (v[p] != v_dins[0]) {
+                continue;
+            }
+            for (int j = 0; j < v_dins.length; j++, p++) {
+                if (v[p] == v_dins[j]) {
+                    aux = true;
+                } else {
+                    aux = false;
+                    p--;
+                    break;
                 }
             }
-            break;
         }
-        return false;
+        return aux;
     }
 
     public static void main(String[] args) {
-        int uno[] = {1, 5, 8, 10, 11, 12, 13, 14, 9, 6};
-        int dos[] = {10, 11, 12, 13, 14};
+        int uno[] = {1,2,3,4,5,1,1,2,3,4,5,6};
+        int dos[] = {1,2,3,4,5,6};
+        System.out.println(conte(uno, dos));
     }
 }

@@ -294,26 +294,46 @@ public class Remaster {
 
     //Ejercicio 27
     static void inserta(int[] v, int x, int p) {
-        int[] save = Arrays.copyOf(v, v.length);
+        int[] copyV = Arrays.copyOf(v, v.length);
         if (0 == p) {
             v[0] = x;
-            for (int i = 0; i < v.length - 1; i++) {
-                v[i + 1] = save[i];
-            }
+            for (int i = 0; i < v.length - 1; i++)
+                v[i + 1] = copyV[i];
         } else if (v.length - 1 == p) {
             v[v.length - 1] = x;
         } else {
-            for (int i = p, k = p; i < v.length; i++, k++) {
+            for (int i = p; i < v.length; i++) {
                 v[p] = x;
-                v[i] = save[k - 1];
+                v[i] = copyV[i - 1];
             }
         }
         System.out.println(Arrays.toString(v));
     }
 
+    //Ejercicio 28
+    static boolean conte(int[] v, int[] v_dins) {
+        int auxiliar[] = new int[v_dins.length];
+        boolean aux = false;
+        for (int p = 0; p < v.length; p++) {
+            if (v[p] != v_dins[0]) {
+                continue;
+            }
+            for (int j = 0; j < v_dins.length; j++, p++) {
+                if (v[p] == v_dins[j]) {
+                    auxiliar[j] = v[p];
+                    aux = true;
+                } else {
+                    aux = false;
+                    p--;
+                    break;
+                }
+            }
+        }
+        return aux;
+    }
 
     public static void main(String[] args) {
-        int buscarEnV[] = {1, 2, 3, 4, 5, 15, 85, 9, 9, 8, 7, 5, 6, 7, 89, 78};
-        inserta(buscarEnV, 666, 15);
+        int buscarEnV[] = {1, 2, 3, 4, 5};
+        inserta(buscarEnV, 666, 0);
     }
 }
