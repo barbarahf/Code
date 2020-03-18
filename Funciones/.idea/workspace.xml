@@ -87,8 +87,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Remaster" />
-        <item itemvalue="Application.Borrar" />
         <item itemvalue="Application.Funciones_12" />
+        <item itemvalue="Application.Borrar" />
         <item itemvalue="Application.DesplazarArray" />
         <item itemvalue="Application.TiempoEjecucion" />
       </list>
@@ -183,7 +183,7 @@
       <workItem from="1584376501605" duration="5253000" />
       <workItem from="1584387825823" duration="10018000" />
       <workItem from="1584454415497" duration="582000" />
-      <workItem from="1584455374880" duration="13685000" />
+      <workItem from="1584455374880" duration="24493000" />
     </task>
     <servers />
   </component>

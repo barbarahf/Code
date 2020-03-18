@@ -233,9 +233,87 @@ public class Remaster {
         }
         return nuevo;
     }
+
     //Ejercicio 23
+    static int[] crea_vector(int min, int max, int num_valors) {
+        int[] vector = new int[num_valors];
+        if (min > max) {
+            int aux = min;
+            min = max;
+            max = aux;
+        }
+        for (int n = 0; n < vector.length; n++) {
+            vector[n] = (int) (Math.random() * (max - min + 1) + min);
+        }
+        return vector;
+    }
+
+    //Ejercicio 24
+    static int posicio(int[] v, int x) {
+        for (int i = 0; i < v.length; i++)
+            if (v[i] == v[x])
+                return v[i];
+        return -1;
+    }
+
+    //Ejercicio 25
+    static int quants(int[] v, int x) {
+        int contador = 0;
+        for (int i = 0; i < v.length; i++)
+            if (v[i] == x)
+                contador++;
+        return contador;
+
+    }
+
+    //Ejercicio 26
+    static boolean num_primers(long n) {
+        if (n <= 2)
+            return n == 2;
+        if (n % 2 == 0)
+            return false;
+        long sq = (long) Math.sqrt(n);
+        for (int m = 3; m <= sq; m += 2)
+            if (n % m == 0)
+                return false;
+        return true;
+    }
+
+    static long[] vec_primers(int num_primers) {
+        long[] primos = new long[num_primers];
+        primos[0] = 2;
+        long provar = 3;
+        int num_primos = 1;
+        while (provar <= num_primers) {
+            if (num_primers(provar))
+                primos[num_primos++] = provar;
+            provar += 2;
+        }
+        return Arrays.copyOf(primos, num_primos);
+    }
+
+    //Ejercicio 27
+    static void inserta(int[] v, int x, int p) {
+        int[] save = Arrays.copyOf(v, v.length);
+        if (0 == p) {
+            v[0] = x;
+            for (int i = 0; i < v.length - 1; i++) {
+                v[i + 1] = save[i];
+            }
+        } else if (v.length - 1 == p) {
+            v[v.length - 1] = x;
+        } else {
+            for (int i = p, k = p; i < v.length; i++, k++) {
+                v[p] = x;
+                v[i] = save[k - 1];
+            }
+        }
+        System.out.println(Arrays.toString(v));
+    }
+
 
     public static void main(String[] args) {
-
+        int buscarEnV[] = {1, 2, 3, 4, 5, 15, 85, 9, 9, 8, 7, 5, 6, 7, 89, 78};
+        inserta(buscarEnV, 666, 15);
     }
 }

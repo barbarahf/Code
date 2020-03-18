@@ -259,7 +259,6 @@ public class Funciones_12 {
             if (v[i] == v[x])
                 return v[i];
         return -1;
-
     }
 
     //Ejercicio 25
@@ -355,8 +354,6 @@ public class Funciones_12 {
         System.out.println(Arrays.toString(v));
     }
 
-//Chuleta --> subString CharAt --> Numeros primos OJO --> Practica metodo main
-
     //Ejercicio 28
 
     static boolean conte(int[] v, int[] v_dins) {
@@ -367,6 +364,7 @@ public class Funciones_12 {
             for (int v_din : v_dins) {
                 if (v[m] == v_din) {
                     int auxi = v[m];
+
                     m++;
                 }
             }
@@ -383,8 +381,8 @@ public class Funciones_12 {
 //        System.out.println("Tiempo invertido = " + (System.currentTimeMillis() - tiempoMs));
 
         int buscarEnV[] = {1, 5, 8, 10, 11, 12, 13, 14, 9, 6};
-        int v_dins[] = {10, 11, 12, 13, 10};
-        System.out.println(conte(buscarEnV, v_dins));
-
+//        int v_dins[] = {10, 11, 12, 13, 10};
+//        System.out.println(conte(buscarEnV, v_dins));
+        inserta(buscarEnV, 66, 1);
     }
 }
