@@ -312,7 +312,6 @@ public class Remaster {
 
     //Ejercicio 28
     static boolean conte(int[] v, int[] v_dins) {
-        int auxiliar[] = new int[v_dins.length];
         boolean aux = false;
         for (int p = 0; p < v.length; p++) {
             if (v[p] != v_dins[0]) {
@@ -320,7 +319,6 @@ public class Remaster {
             }
             for (int j = 0; j < v_dins.length; j++, p++) {
                 if (v[p] == v_dins[j]) {
-                    auxiliar[j] = v[p];
                     aux = true;
                 } else {
                     aux = false;
@@ -332,8 +330,28 @@ public class Remaster {
         return aux;
     }
 
+    //Ejercici29
+    static int[] valors(int v[]) {
+        int vret[] = new int[v.length];
+        int find = 0;
+        int position = 0;
+        while (position < v.length) {
+            for (int i = 0; i < v.length; ) {
+                if (v[position] == v[i]) {
+                    find += 1;
+                    vret[position] = find;
+                    i++;
+                } else if (v[position] != v[i]) {
+                    i++;
+                }
+            }
+            position++;
+            find = 0;
+        }
+        return vret;
+    }
+
     public static void main(String[] args) {
-        int buscarEnV[] = {1, 2, 3, 4, 5};
-        inserta(buscarEnV, 666, 0);
+//        System.out.println(Arrays.toString(valors(nuevo)));
     }
 }
