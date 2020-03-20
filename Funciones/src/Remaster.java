@@ -350,8 +350,18 @@ public class Remaster {
         }
         return vret;
     }
+    //Ejercicio 30
 
     public static void main(String[] args) {
-//        System.out.println(Arrays.toString(valors(nuevo)));
+
+        int[] cienElements = new int[100];
+        for (int n = 0; n < cienElements.length; n++) {
+            cienElements[n] = (int) (Math.random() * 100);
+
+        }
+
+        System.out.println(Arrays.toString(cienElements));
+        System.out.println("  " + Arrays.toString(valors(cienElements)));
+        System.out.println(cienElements.length);
     }
 }

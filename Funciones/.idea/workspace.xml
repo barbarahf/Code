@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8e844c83-2136-435d-8345-a646b692f3d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Funciones/Borrar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/Borrar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Funciones/Borrar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Funciones/Borrar2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Funciones/Ejercicio29.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Funciones/Remaster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Funciones/Remaster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Borrar.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Remaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Remaster.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,6 +14,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Funciones" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Ejercicio29">
+  <component name="RunManager" selected="Application.Remaster">
     <configuration name="Borrar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Borrar" />
       <module name="Funciones" />
@@ -85,9 +89,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Remaster" />
         <item itemvalue="Application.Ejercicio29" />
         <item itemvalue="Application.Borrar" />
-        <item itemvalue="Application.Remaster" />
         <item itemvalue="Application.Funciones_12" />
         <item itemvalue="Application.DesplazarArray" />
       </list>
@@ -185,7 +189,8 @@
       <workItem from="1584455374880" duration="25159000" />
       <workItem from="1584535384289" duration="1046000" />
       <workItem from="1584542699850" duration="8252000" />
-      <workItem from="1584600824295" duration="18865000" />
+      <workItem from="1584600824295" duration="23607000" />
+      <workItem from="1584737048833" duration="599000" />
     </task>
     <servers />
   </component>
@@ -212,6 +217,11 @@
           <url>jar://C:/Program Files/Java/jdk-13.0.1/lib/src.zip!/java.base/java/lang/String.java</url>
           <line>1020</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Remaster.java</url>
+          <line>197</line>
+          <option name="timeStamp" value="147" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
