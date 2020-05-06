@@ -226,7 +226,7 @@ public class Funciones_12 {
         int[] result = new int[lengthMax];
         int[] copiaMax = new int[lengthMax];
         if (first.length > second.length)
-            System.arraycopy(first, 0, copiaMax, 0, first.length);
+            System.y(first, 0, copiaMax, 0, first.length);
         else
             System.arraycopy(second, 0, copiaMax, 0, second.length);
         for (int i = 0; i < lengthMin; i++) {
@@ -284,7 +284,6 @@ public class Funciones_12 {
         return true;
 
     }
-
     private static long[] vectorPrimos(int n) {
         long[] primos = new long[n];
         primos[0] = 2;
