@@ -14,7 +14,7 @@ public class Main {
 
     static class Escribiendo {
         public void escribir() {
-            String frase = "prueba de escritura uouuuuuuuu aaihbjsd me amor";
+            String frase = "Hi";
 
             try {
                 FileWriter escribir = new FileWriter("hola.txt", true);//True, en caso de que exista
