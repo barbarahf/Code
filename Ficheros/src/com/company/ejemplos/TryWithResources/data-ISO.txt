@@ -1,6 +1,0 @@
-Primer fitxer
-amb el que treballarem.
-Anirem llegint
-línia a línia
-i mostrarem
-el resultat
