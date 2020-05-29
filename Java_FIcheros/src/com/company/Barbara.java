@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class Main {
+public class Barbara {
 
     public static boolean esSeparador(char c) {
         final String separador = " ¡!&().,:¿?;";
@@ -97,3 +97,4 @@ public class Main {
         }
     }
 }
+

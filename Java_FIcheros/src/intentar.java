@@ -64,3 +64,16 @@
 //            System.out.println(a);
 //    }
 //}
+//    public static String shuffle(String palabra) {
+////        String s = palabra.substring(1, palabra.length() - 1);
+//        char[] characters = palabra.toCharArray();
+//        for (int j = 0; j < characters.length; j++) {
+//            int randomIndex = (int) (Math.random() * characters.length);
+//            char temp = characters[j];
+//            characters[j] = characters[randomIndex];
+//            characters[randomIndex] = temp;
+//        }
+//        String n = new String(characters);
+////        String re = palabra.charAt(0) + n + palabra.charAt(palabra.length() - 1);
+//        return n;
+//    }
