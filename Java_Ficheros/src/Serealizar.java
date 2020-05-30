@@ -4,45 +4,99 @@
 //import java.util.Scanner;
 //
 //public class Serealizar {
-//    public static void main(String[] args) {
+//    private static String nomFicher = "/home/barbara/Documentos/Java/Java_Ficheros/src/user.bin";
+//    private static Cliente[] clientes = new Cliente[1000];
+//    private static Cliente[] clientesBin = new Cliente[1000];
+//    private static int numClient = leerFichero(clientes);
+////    private static int numGuardados = 5;
 //
-////        System.out.println(leerFichero(fitxer));
-//        Cliente[] clientes = new Cliente[1000];
+//    public static void main(String[] args) {
 //        leerFichero(clientes);
-//        for (int i = 0; i < leerFichero(clientes); i++) {
-//            System.out.println(clientes[i]);
+////        mostrarVec(clientes);
+//        Cliente cli = new Cliente();
+//        for (int i = 0; i < clientes.length; i++) {
+//            if (clientes[i] == null) {
+//                clientes[i] = cli;
+//                break;
+//            }
+//        }
+//        createBin(clientes);
+//        ReadBin(clientesBin);
+//        mostrarVec(clientesBin);
+//
+//    }
+//
+//    public static void createBin(Cliente[] vCli) {
+//        try {
+//            FileOutputStream file = new FileOutputStream(nomFicher);
+//            ObjectOutputStream object = new ObjectOutputStream(file);
+//            int i = 0;
+//            while (vCli[i] != null) {
+//                object.writeObject(vCli[i]);
+//                i++;
+//            }
+//
+//            object.close();
+//            file.close();
+//        } catch (Exception e) {
+//            System.out.println(e.getMessage());
 //        }
 //    }
 //
+//    public static int ReadBin(Cliente[] saveBin) {
+//        int i = 0;
+//        try {
+//            FileInputStream fileIn = new FileInputStream(nomFicher);
+//            ObjectInputStream object = new ObjectInputStream(fileIn);
+//            while (saveBin[i] == null && i <= 7) {
+//                saveBin[i] = (Cliente) object.readObject();
+//                i++;
+//            }
+//            object.close();
+//            fileIn.close();
+//        } catch (Exception e) {
+//            System.out.println(e.getMessage());
+//        }
+//        return i;
+//    }
 //
 //    public static int leerFichero(Cliente[] v) {
-//        int c = 0;
+//        File file = new File("/home/barbara/Documentos/Java/Java_Ficheros/src/clients.txt");
+//        int count = 0;
 //        try {
-//            File file = new File("/home/barbara/Documentos/Java/Java_Ficheros/src/clients.txt");
-//            String s = "";
+//
 //            Scanner scanner = new Scanner(file, "UTF-8");
 //            while (scanner.hasNext()) {
-//                s = scanner.nextLine();
+//                String s = scanner.nextLine();
 //                String[] vec = s.replaceAll(";", "!¡!").split("!¡!", s.length() - 1);
 //                int k = 0;
 //                while (k < vec.length) {
-//                    v[c] = new Cliente(vec[k++], vec[k++], Long.parseLong(vec[k++]), Long.parseLong(vec[k++]), new
+//                    v[count] = new Cliente(vec[k++], vec[k++], Long.parseLong(vec[k++]), Long.parseLong(vec[k++]), new
 //                            Fecha(Integer.parseInt(vec[k++]), Integer.parseInt(vec[k++]), Integer.parseInt(vec[k++])),
 //                            Long.parseLong(vec[k++]), Long.parseLong(vec[k++]), !vec[k++].equals("N"));
 //                }
-//                c += 1;
+//
+//                count += 1;
 //            }
 //            scanner.close();
 //        } catch (Exception e) {
 //            System.out.println(e.getMessage());
 //        }
-//        return c;
+//        return count;
 //    }
 //
+//    public static void mostrarVec(Cliente[] v) {
+//        int i = 0;
+//        while (v[i] != null) {
+//            System.out.println(v[i]);
+//            i++;
+//        }
+//    }
 //
 //}
 //
-//class Cliente {
+//
+//class Cliente implements Serializable {
 //    private String nom;
 //    private String nif;
 //    private long telfixe;
@@ -53,6 +107,7 @@
 //    private boolean vip;
 //
 //    public Cliente(String nom, String nif, long telfixe, long telmovil, Fecha dataalta, long comandes, long pendents, boolean vip) {
+//
 //        this.nom = nom;
 //        this.nif = nif;
 //        this.telfixe = telfixe;
@@ -61,6 +116,7 @@
 //        this.comandes = comandes;
 //        this.pendents = pendents;
 //        this.vip = vip;
+//
 //    }
 //
 //    @Override
@@ -94,22 +150,23 @@
 //        entrada.next();
 //        nif = entrada.nextLine();
 //        System.out.print("telfixe: ");
-//        telfixe = entrada.nextInt();
+//        telfixe = entrada.nextLong();
 //        System.out.print("telmovil: ");
-//        telmovil = entrada.nextInt();
-//        System.out.print("dataalta: ");
+//        telmovil = entrada.nextLong();
+//        dataalta = new Fecha();
 //        System.out.print("comandes: ");
-//        comandes = entrada.nextInt();
+//        comandes = entrada.nextLong();
 //        System.out.print("pendents: ");
-//        pendents = entrada.nextInt();
+//        pendents = entrada.nextLong();
 //        System.out.print("vip: ");
 //        vip = entrada.nextBoolean();
+//
 //    }
 //
 //
 //}
 //
-//class Fecha {
+//class Fecha implements Serializable {
 //    private int dia, mes, any;
 //
 //    public Fecha(int any, int mes, int dia) {
@@ -117,7 +174,6 @@
 //        this.mes = mes;
 //        this.any = any;
 //    }
-//
 //
 //    public void setFecha(int any, int mes, int dia) {
 //        this.dia = dia;
@@ -128,6 +184,17 @@
 //    @Override
 //    public String toString() {
 //        return dia + "/" + mes + "/" + any;
+//    }
+//
+//    public Fecha() {
+//        Scanner entrada = new Scanner(System.in);
+//        System.out.println("Introsueix la data: ");
+//        System.out.print("Dia: ");
+//        dia = entrada.nextInt();
+//        System.out.print("Mes: ");
+//        mes = entrada.nextInt();
+//        System.out.print("Any: ");
+//        any = entrada.nextInt();
 //    }
 //
 //}
