@@ -15,34 +15,25 @@ public class GravaObjectes {
     }
 
     public static int leerFichero(Cliente[] v) {
+        File file = new File("/home/barbara/Documentos/Java/Java_Ficheros/src/clients.txt");
         int count = 0;
         try {
-            File file = new File("/home/barbara/Documentos/Java/Java_Ficheros/src/clients.txt");
-            String s = "";
-            String nam = "";
+
             Scanner scanner = new Scanner(file, "UTF-8");
             while (scanner.hasNext()) {
-                s = scanner.nextLine();
-                final String sep = "!¡;";
-                for (int i = 0; i < s.length(); i++) {
-                    if (!sep.contains(Character.toString(s.charAt(i)))) {
-                        nam += s.charAt(i);
-                        v[count] = new Cliente();
-                        v[count].setNom(nam);
-                        v[count].setNif(nam);
-                        v[count].setTelmovil(Long.parseLong(nam));
-                        v[count].setTelfixe(Long.parseLong(nam));
-                        v[count].setTelfixe(Long.parseLong(nam));
-                        v[count].setTelfixe(Long.parseLong(nam));
-
-                    }
+                String s = scanner.nextLine();
+                String[] vec = s.replaceAll(";", "!¡!").split("!¡!", s.length() - 1);
+                int k = 0;
+                while (k < vec.length) {
+                    v[count] = new Cliente(vec[k++], vec[k++], Long.parseLong(vec[k++]), Long.parseLong(vec[k++]), new
+                            Fecha(Integer.parseInt(vec[k++]), Integer.parseInt(vec[k++]), Integer.parseInt(vec[k++])),
+                            Long.parseLong(vec[k++]), Long.parseLong(vec[k++]), !vec[k++].equals("N"));
                 }
-                System.out.println(nam);
+                count += 1;
             }
-
             scanner.close();
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
         return count;
     }
@@ -58,6 +49,17 @@ class Cliente {
     private long pendents;
     private boolean vip;
 
+    public Cliente(String nom, String nif, long telfixe, long telmovil, Fecha dataalta, long comandes, long pendents, boolean vip) {
+        this.nom = nom;
+        this.nif = nif;
+        this.telfixe = telfixe;
+        this.telmovil = telmovil;
+        this.dataalta = dataalta;
+        this.comandes = comandes;
+        this.pendents = pendents;
+        this.vip = vip;
+    }
+
     @Override
     public String toString() {
         return "nom='" + nom + '\'' +
@@ -70,35 +72,14 @@ class Cliente {
                 ", vip=" + vip;
     }
 
-    public void setNom(String nom) {
+    public void setCli(String nom, String nif, long telfixe, long telmovil, Fecha dataalta, long comandes, long pendents, boolean vip) {
         this.nom = nom;
-    }
-
-    public void setNif(String nif) {
         this.nif = nif;
-    }
-
-    public void setTelfixe(long telfixe) {
         this.telfixe = telfixe;
-    }
-
-    public void setTelmovil(long telmovil) {
         this.telmovil = telmovil;
-    }
-
-    public void setDataalta(Fecha dataalta) {
         this.dataalta = dataalta;
-    }
-
-    public void setComandes(long comandes) {
         this.comandes = comandes;
-    }
-
-    public void setPendents(long pendents) {
         this.pendents = pendents;
-    }
-
-    public void setVip(boolean vip) {
         this.vip = vip;
     }
 
@@ -122,31 +103,24 @@ class Cliente {
         vip = entrada.nextBoolean();
     }
 
-//    public Cliente(String nom, String nif, long telfixe, long telmovil, Fecha dataalta, long comandes, long pendents, boolean vip) {
-//        this.nom = nom;
-//        this.nif = nif;
-//        this.telfixe = telfixe;
-//        this.telmovil = telmovil;
-//        this.dataalta = dataalta;
-//        this.comandes = comandes;
-//        this.pendents = pendents;
-//        this.vip = vip;
-//    }
 
 }
 
 class Fecha {
     private int dia, mes, any;
+
     public Fecha(int any, int mes, int dia) {
         this.dia = dia;
         this.mes = mes;
         this.any = any;
     }
+
     public void setFecha(int any, int mes, int dia) {
         this.dia = dia;
         this.mes = mes;
         this.any = any;
     }
+
     @Override
     public String toString() {
         return dia + "/" + mes + "/" + any;
