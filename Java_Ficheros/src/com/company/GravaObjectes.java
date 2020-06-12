@@ -3,20 +3,23 @@ package com.company;
 import java.io.File;
 import java.util.Scanner;
 import java.io.*;
+import java.util.Calendar;
 
 /**
  * @author Barbara Herrera Flores
  */
 public class GravaObjectes {
     private static String nomFicher = "/home/barbara/Documentos/Java/Java_Ficheros/src/user.bin";
+    private static String archivoFuente = "/home/barbara/Documentos/Java/Java_Ficheros/src/clients.txt";
     private static Cliente[] clientes = new Cliente[1000];
     private static Cliente[] clientesBin = new Cliente[1000];
-    private static int numClient = leerFichero(clientes);
-    private static int numGurarados = ReadBin(clientesBin);
+    private static int numClient;
+    private static int numGurarados;
 
     public static void main(String[] args) {
-        leerFichero(clientes);
+        numClient = leerFichero(clientes);
         Cliente cli = new Cliente();
+        //Almacenar el nuevo objeto
         for (int i = 0; i < clientes.length; i++) {
             if (clientes[i] == null) {
                 clientes[i] = cli;
@@ -24,8 +27,10 @@ public class GravaObjectes {
             }
         }
         createBin(clientes);
-        ReadBin(clientesBin);
+        numGurarados = ReadBin(clientesBin);
         mostrarVec(clientesBin);
+        System.out.println("Se han guardado en el vector " + numClient + " objectos");
+        System.out.println("En el archivo bin se encuentran almacenados " + numGurarados + " objetos");
     }
 
     public static void createBin(Cliente[] vCli) {
@@ -63,10 +68,9 @@ public class GravaObjectes {
     }
 
     public static int leerFichero(Cliente[] v) {
-        File file = new File("/home/barbara/Documentos/Java/Java_Ficheros/src/clients.txt");
         int count = 0;
         try {
-
+            File file = new File(archivoFuente);
             Scanner scanner = new Scanner(file, "UTF-8");
             while (scanner.hasNext()) {
                 String s = scanner.nextLine();
@@ -98,6 +102,8 @@ public class GravaObjectes {
 
 
 class Cliente implements Serializable {
+
+    //    private int dat = Calendar.getInstance().get(Calendar.YEAR);
     private String nom;
     private String nif;
     private long telfixe;
@@ -106,6 +112,7 @@ class Cliente implements Serializable {
     private long comandes;
     private long pendents;
     private boolean vip;
+
 
     public Cliente(String nom, String nif, long telfixe, long telmovil, Fecha dataalta, long comandes, long pendents, boolean vip) {
 
@@ -143,6 +150,15 @@ class Cliente implements Serializable {
         this.vip = vip;
     }
 
+
+//    public void addDescuento() { //set
+//        long descuento = comandes * 100 / 10;
+//        if (dataalta.getAny() <= 5 - dat)
+//            comandes -= descuento;
+//
+//    }
+
+
     public Cliente() {
         Scanner entrada = new Scanner(System.in);
         System.out.print("nom: ");
@@ -168,6 +184,7 @@ class Cliente implements Serializable {
 }
 
 class Fecha implements Serializable {
+
     private int dia, mes, any;
 
     public Fecha(int any, int mes, int dia) {
@@ -181,6 +198,18 @@ class Fecha implements Serializable {
         this.mes = mes;
         this.any = any;
     }
+
+    //    public int getDia() {
+//        return dia;
+//    }
+//
+//    public int getMes() {
+//        return mes;
+//    }
+//
+//    public int getAny() {
+//        return any;
+//    }
 
     @Override
     public String toString() {

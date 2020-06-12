@@ -1,27 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8e844c83-2136-435d-8345-a646b692f3d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EXAMEN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ExamenUf2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/idk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_Ficheros/src/hh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_Ficheros/src/palabras.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficheros_Ejemplos/src/paractica5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ficheros_Ejemplos/src/paractica5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Funciones/Funciones_12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Funciones/META-INF/Funciones.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Funciones/com/company/Funciones_11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Funciones/com/company/funciones_class.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Funciones/DesplazarArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DesplazarArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesplazarArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Funciones_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funciones_12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Masterman.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Funciones_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funciones_11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/funciones_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/funciones_class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Ficheros/out/production/Java_FIcheros/com/company/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ficheros/out/production/Java_FIcheros/com/company/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Ficheros/out/production/Java_FIcheros/com/company/Fecha.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ficheros/out/production/Java_FIcheros/com/company/Fecha.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Ficheros/out/production/Java_FIcheros/com/company/GravaObjectes.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ficheros/out/production/Java_FIcheros/com/company/GravaObjectes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Ficheros/out/production/Java_FIcheros/user.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ficheros/out/production/Java_FIcheros/user.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Ficheros/src/com/company/GravaObjectes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ficheros/src/com/company/GravaObjectes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Ficheros/src/user.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Ficheros/src/user.bin" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Funciones" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,26 +52,20 @@
   </component>
   <component name="ProjectId" id="1X9qfyFNLZEHGG9jbq9SHpVc0kO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SopaDeLetras" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.EXAMEN">
     <configuration name="Borrar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -207,24 +218,42 @@
       <workItem from="1587814016272" duration="779000" />
       <workItem from="1588108324126" duration="80000" />
       <workItem from="1588148448616" duration="25000" />
+      <workItem from="1591276113152" duration="1744000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1322" height="249" key="GridCell.Tab.0.bottom" timestamp="1591279933291">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="249" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1591279933291" />
+    <state width="1322" height="249" key="GridCell.Tab.0.center" timestamp="1591279933291">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="249" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1591279933291" />
+    <state width="1322" height="249" key="GridCell.Tab.0.left" timestamp="1591279933291">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="249" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1591279933291" />
+    <state width="1322" height="249" key="GridCell.Tab.0.right" timestamp="1591279933291">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="249" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1591279933291" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -238,6 +267,31 @@
           <url>file://$PROJECT_DIR$/src/Remaster.java</url>
           <line>197</line>
           <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/idk.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/idk.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/idk.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/idk.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/idk.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="152" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
