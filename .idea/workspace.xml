@@ -19,127 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22378066-32cf-4937-adef-60e209b0662c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ficheros/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ficheros/src/JfileChooser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/out/production/Ficheros/2-Lectura_escritura/3-Fitxers de text i binaris (grava format)/Fitxers generats.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/out/production/Ficheros/META-INF/ficheros.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/out/production/Ficheros/com/company/Primes100K$Lee_fichero.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/out/production/Ficheros/com/company/Primes100K$Palindromos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/out/production/Ficheros/com/company/Primes100K.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/1-Lectura de fitxers de text/LecturaFactures.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/1-Lectura de fitxers de text/LecturaFactures.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/1-Lectura de fitxers de text/LlegirCaraCar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/1-Lectura de fitxers de text/LlegirCaraCar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/1-Lectura de fitxers de text/LlegirCaraCarBuffer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/1-Lectura de fitxers de text/LlegirCaraCarBuffer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/1-Lectura de fitxers de text/LlegirLiniaLiniaBuffer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/1-Lectura de fitxers de text/LlegirLiniaLiniaBuffer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/1-Lectura de fitxers de text/LlegirLiniaLiniaScanner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/1-Lectura de fitxers de text/LlegirLiniaLiniaScanner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/1-Lectura de fitxers de text/LlegirLongsScanner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/1-Lectura de fitxers de text/LlegirLongsScanner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/1-Lectura de fitxers de text/ScannerText_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/1-Lectura de fitxers de text/ScannerText_1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/Escriure línies/EscriureLiniesBufferedWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/Escriure línies/EscriureLiniesBufferedWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/Escriure línies/EscriureLiniesFileWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/Escriure línies/EscriureLiniesFileWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/FileWriterCaracters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/FileWriterCaracters.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/FileWriterFitxerGran.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/FileWriterFitxerGran.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/FileWriterambBufferedWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/FileWriterambBufferedWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/Fitxer temporal/FitxerTemporal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/Fitxer temporal/FitxerTemporal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/PrintWriter y PrintStream/EscriureLiniesPrintStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/PrintWriter y PrintStream/EscriureLiniesPrintStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/PrintWriter y PrintStream/EscriureLiniesPrintWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/PrintWriter y PrintStream/EscriureLiniesPrintWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/PrintWriter y PrintStream/EscriureLiniesPrintWriterFileWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Escriptura de fitxers de text/PrintWriter y PrintStream/EscriureLiniesPrintWriterFileWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/Escriure línies/EscriureLiniesBufferedWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/Escriure línies/EscriureLiniesBufferedWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/Escriure línies/EscriureLiniesFileWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/Escriure línies/EscriureLiniesFileWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/FileWriterCaracters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/FileWriterCaracters.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/FileWriterFitxerGran.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/FileWriterFitxerGran.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/FileWriterambBufferedWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/FileWriterambBufferedWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/Fitxer temporal/FitxerTemporal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/Fitxer temporal/FitxerTemporal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/PrintWriter y PrintStream/EscriureLiniesPrintStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/PrintWriter y PrintStream/EscriureLiniesPrintStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/PrintWriter y PrintStream/EscriureLiniesPrintWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/PrintWriter y PrintStream/EscriureLiniesPrintWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/PrintWriter y PrintStream/EscriureLiniesPrintWriterFileWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/2-Escriptura de fitxers de text/PrintWriter y PrintStream/EscriureLiniesPrintWriterFileWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/3-Fitxers de text i binaris (grava format)/Fitxers generats.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/3-Fitxers de text i binaris (grava format)/GravarFormat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/3-Fitxers de text i binaris (grava format)/GravarFormat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/4-Lectura-Escriptura de fitxers/LecturaEscriptura.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/2-Lectura_escritura/4-Lectura-Escriptura de fitxers/LecturaEscriptura.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/Bytes/Lectura_Escritura_Bytes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficheros/src/Mesnota.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ficheros/src/Mesnota.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/POO.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/out/production/POO/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/src/com/company/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/Practicas_Ficheros.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/TaulaMultiplicar.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/nom.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/numeros.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/out/production/Practicas_Ficheros/Barbara.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/out/production/Practicas_Ficheros/FielesNum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/out/production/Practicas_Ficheros/META-INF/Practicas_Ficheros.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/out/production/Practicas_Ficheros/Mesnota.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/out/production/Practicas_Ficheros/Mitja.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/out/production/Practicas_Ficheros/NotaAlumne.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/out/production/Practicas_Ficheros/Taula.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/src/Barbara.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/src/Barbara.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/src/FielesNum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/src/Mesnota.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/src/Mitja.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/src/NotaAlumne.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/src/Taula.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas_Ficheros/src/numeros.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejerciciosPOO/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejerciciosPOO/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejerciciosPOO/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejerciciosPOO/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejerciciosPOO/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejerciciosPOO/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejerciciosPOO/ejerciciosPOO.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejerciciosPOO/out/production/ejerciciosPOO/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejerciciosPOO/out/production/ejerciciosPOO/com/company/Tiempo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejerciciosPOO/src/Tiempo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejerciciosPOO/src/com/company/Main.java" beforeDir="false" />
-    </list>
+    <list default="true" id="22378066-32cf-4937-adef-60e209b0662c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,9 +34,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Java_UF1_2020" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -170,6 +52,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -181,11 +64,12 @@
       <option name="presentableId" value="Default" />
       <updated>1590566867317</updated>
       <workItem from="1590566870978" duration="2436000" />
+      <workItem from="1601670771414" duration="21000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -197,11 +81,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2535" y="346" width="482" height="386" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590567573707">
-      <screen x="1366" y="0" width="1920" height="1080" />
+    <state x="466" y="156" width="424" height="491" key="FileChooserDialogImpl" timestamp="1601670790417">
+      <screen x="0" y="29" width="1366" height="739" />
     </state>
-    <state x="2535" y="346" width="482" height="386" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1590567573707" />
+    <state x="466" y="156" width="424" height="491" key="FileChooserDialogImpl/0.29.1366.739/1366.0.1920.1080@0.29.1366.739" timestamp="1601670790417" />
   </component>
 </project>

@@ -1,8 +1,8 @@
-
 public class Personatge {
+    private static final String[][] tablero = new String[10][10];
     private final String nom;
-    private final int x;
-    private final int y;
+    private int x;
+    private int y;
     private double presupuerto;
     private String mochila;
 
@@ -47,7 +47,51 @@ public class Personatge {
         return y;
     }
 
+    //Move
+    private void xLeft(){
+        this.x--;
+    }
+    private void yDown(){
+        this.y--;
+    }
+    private void xRigth(){
+        this.x++;
+    }
+    private void yUp(){
+        this.y++;
+    }
 
+    private void move(int x){
+        while (this.x!=x){
+         if(this.x>x)  {
+             while (this.x!=x){
+                 this.xLeft();
+
+             }
+         }else{
+             this.xRigth();
+         }
+        }
+
+    }
+    //Overload
+    private void move(int x,int y){
+        move(x);
+        while (this.y!=y){
+            if(this.y>y)  {
+                while (this.y!=y){
+                    this.yDown();
+                }
+            }else{
+                this.yUp();
+            }
+        }
+        tablero[this.x][this.y]=this.nom;
+    }
+
+    //Aceptardinero()
+
+    //agafarCosas()
     @Override
     public String toString() {
         return
@@ -61,17 +105,18 @@ public class Personatge {
 
         Personatge indiana = new Personatge("Indiana", 0, 0, 50.0, "Brujula");
         Personatge pepito = new Personatge("pepito", 7, 3, 30.0, "Mapa");
+        System.out.println(indiana);
 
-        //Tableros
-        String[][] tablero = new String[10][10];
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero[i].length; j++) {
-                tablero[i][j] = "          ";
+                tablero[i][j] = " |........| ";
             }
         }
-        tablero[indiana.getX()][indiana.getY()] = indiana.getNom();
-        tablero[pepito.getX()][pepito.getY()] = pepito.getNom();
+        Personatge.tablero[indiana.getX()][indiana.getY()]=indiana.getNom();
+        Personatge.tablero[pepito.getX()][pepito.getY()]=pepito.getNom();
 
+        indiana.move(1,1);
+        System.out.println(indiana);
         System.out.println("#######################################################");
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero[i].length; j++) {
