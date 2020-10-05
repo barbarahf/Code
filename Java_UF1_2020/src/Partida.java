@@ -43,12 +43,10 @@ class Caballo {
 public class Partida {
     Caballo[] jugadores;
     private final int numJugadores = 3;
-    //    private int numeroPartida;//
     Caballo[][] tablero = new Caballo[4][20];
     private int contador = 0;
 
-    public Partida(/*int numeroPartida,*/ Caballo[] jugadores) {
-//        this.numeroPartida = numeroPartida;
+    public Partida(Caballo[] jugadores) {
         this.jugadores = jugadores;
     }
 
@@ -70,37 +68,42 @@ public class Partida {
         }
         move();
         printTablero();
+        System.out.println("");
         contador++;
-
-    }
-
-    static int move(int numMove, int y) {
-        while (y < numMove) {//Y desplazamiento horizontal
-            y++;
+        while (contador < 6) {//change si ya alguien gano
+            partida();
         }
-        return y;
+
     }
 
     private void move() {
+        //global puntos + nuevos
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero[i].length; j++) {
                 if (tablero[i][j] != null) {
                     Caballo temp = tablero[i][j];
+                    //Check cual es el primero --> Mennor numero
+                    tablero[i][j + temp.getPuntos(contador)] = temp;
                     tablero[i][j] = null;
-                    tablero[i][temp.getPuntos(contador)/*Num jugada*/] = temp;
+                    break;
                 }
             }
         }
     }
-
+//Metodo --> check si alguien a ganada, romper el bucle
     void printTablero() {
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero[i].length; j++) {
-                System.out.print(tablero[i][j] + " ");
+                if (tablero[i][j] == null)
+                    System.out.print(" _...._ ");
+                else
+                    System.out.print(tablero[i][j] + " ");
             }
             System.out.println();
         }
     }
+
+
 
     //get ganador
     //Una partida tiene sus reglas
@@ -109,7 +112,6 @@ public class Partida {
 
     public static void main(String[] args) {
         Caballo[] jugadores = {new Caballo("ju1"), new Caballo("ju2"), new Caballo("ju3")};
-
         Partida num1 = new Partida(jugadores);
         num1.partida();
 
