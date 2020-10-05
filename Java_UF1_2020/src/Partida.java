@@ -1,4 +1,5 @@
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 
 class Dado {
     int resultado;
@@ -18,102 +19,100 @@ class Dado {
 
 class Caballo {
     private Dado myDado = new Dado();
+    List<Integer> puntos = new ArrayList<Integer>();
     private final String nombre;
-
-    public int getNumJugada() {
-        return numJugada;
-    }
-
-    private int numJugada = 0;
-    private int[] puntos = new int[10];
-
-    public int getPuntos(int numJugada) {
-        return puntos[numJugada];
-
-    }
 
     public Caballo(String nombre) {
         this.nombre = nombre;
     }
 
-    public void jugar() {
-        if (numJugada <= 10) {
-            puntos[numJugada] = this.myDado.lanzarDado();
-            numJugada++;
-        }
+    void jugar() {
+        puntos.add(this.myDado.lanzarDado());
+    }
+
+    public Integer getPuntos(int i) {
+        return puntos.get(i);
     }
 
     @Override
     public String toString() {
         return nombre + " dado:" + myDado;
     }
-
 }
 
-
 public class Partida {
-    //Aumentar movida
-//    static int count = Caballo.numJugada;
-    static Caballo tablero[][] = new Caballo[3][20];
+    Caballo[] jugadores;
+    private final int numJugadores = 3;
+    //    private int numeroPartida;//
+    Caballo[][] tablero = new Caballo[4][20];
+    private int contador = 0;
 
-    static int move(int numMove, int y) {//Move debe ser de caballo
-        //Y desplazamiento horizontal
-        while (y < numMove) {
+    public Partida(/*int numeroPartida,*/ Caballo[] jugadores) {
+//        this.numeroPartida = numeroPartida;
+        this.jugadores = jugadores;
+    }
+
+    private void iniTablero() {
+        for (int i = 0; i < jugadores.length; i++) {
+            tablero[i][0] = jugadores[i];
+        }
+    }
+
+
+    private void partida() {
+
+        if (contador == 0) {
+            iniTablero();
+        }
+        for (int i = 0; i < jugadores.length; i++) {
+            jugadores[i].jugar();
+
+        }
+        move();
+        printTablero();
+        contador++;
+
+    }
+
+    static int move(int numMove, int y) {
+        while (y < numMove) {//Y desplazamiento horizontal
             y++;
         }
         return y;
     }
 
-    public static void move() {
+    private void move() {
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero[i].length; j++) {
                 if (tablero[i][j] != null) {
                     Caballo temp = tablero[i][j];
-                    int save = move(tablero[i][j].getPuntos(0), j);
                     tablero[i][j] = null;
-                    tablero[i][save] = temp;
+                    tablero[i][temp.getPuntos(contador)/*Num jugada*/] = temp;
                 }
             }
         }
     }
 
-    static public void printTablero() {
+    void printTablero() {
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero[i].length; j++) {
-                if (tablero[i][j] == null) {
-                    System.out.print("  *****  ");
-                } else {
-                    System.out.print(tablero[i][j] + " ");
-                }
+                System.out.print(tablero[i][j] + " ");
             }
             System.out.println();
         }
     }
 
+    //get ganador
+    //Una partida tiene sus reglas
+    //QUien se mueve antes
+    //SI hay un empate
+
     public static void main(String[] args) {
-        Caballo a1 = new Caballo("a1");
-        Caballo a2 = new Caballo("a2");
-        Caballo a3 = new Caballo("a3");
+        Caballo[] jugadores = {new Caballo("ju1"), new Caballo("ju2"), new Caballo("ju3")};
 
+        Partida num1 = new Partida(jugadores);
+        num1.partida();
 
-        tablero[0][0] = a1;
-        tablero[1][0] = a2;
-        tablero[2][0] = a3;
-        System.out.println(a1 + "  " + a2 + "  " + a3);
-        a1.jugar();
-        a2.jugar();
-        a3.jugar();//Jugar en loop?
-        move();
-       /* Caballo.numJugada++;*/
-        System.out.println(a1 + "  " + a2 + "  " + a3);
-        a1.jugar();
-        a2.jugar();
-        a3.jugar();//Jugar en loop?
-        move();
-      /*  Caballo.numJugada++;*/
-        System.out.println(a1 + "  " + a2 + "  " + a3);
-
-        printTablero();
 
     }
 }
