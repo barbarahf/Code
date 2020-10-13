@@ -167,7 +167,7 @@ public class Personatge {
             System.out.println("Nom:" + indiana.getNom());
             System.out.println("Coordenadas:" + indiana.getY() + "," + indiana.getX());
             System.out.println("Mochila:" + indiana.getMochila());
-
+            System.out.println(pepito);
         } catch (Exception e) {
             System.out.println(e);
         }
