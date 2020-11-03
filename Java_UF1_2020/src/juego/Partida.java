@@ -8,9 +8,12 @@ class Dado {
     int resultado;
 
     public int lanzarDado() {
-        this.resultado = (int) (Math.random() * (6 - 1 + 1) + 1);
+        this.resultado = (int) (Math.random() * (6 - 1 + 1) + 1);//Short
         return this.resultado;
     }
+    //Constructor por defecto Dau()
+    //Get puntos()
+    //Lanzar dado()
 
 }
 
@@ -62,7 +65,9 @@ public class Partida {
         this.jugadores = jugadores;
     }
 
+    //Iniciar joc
     private void Iniciarpartida() {
+        //Jugada
         for (int i = 0; i < jugadores.length; i++) {
             jugadores[i].jugar();
         }
@@ -74,6 +79,7 @@ public class Partida {
         }
     }
 
+    //Es final
     boolean ganardor() { //Busca si alguien alcanzo la puntuacion
         for (int i = 0; i < jugadores.length; i++) {
             if (jugadores[i].getCount() >= numGana)
@@ -82,7 +88,8 @@ public class Partida {
         return false;
     }
 
-    void checkGanador() {
+    //FinalJoc
+    void checkGanador() {//Arreglar, disminuir código
         for (int i = 0; i < jugadores.length; i++) {
             for (int j = i + 1; j < jugadores.length; j++) {//Check ultima puntuacion para obtener a el ganador
                 int jugI = jugadores[i].getPuntos().get(jugadores[i].getPuntos().size() - 1);
@@ -93,7 +100,7 @@ public class Partida {
                     jugadores[j] = sav;
                 }
                 if (jugI == jugJ) {//Check empate
-                    if (jugadores[i].sumPuntos() > jugadores[j].sumPuntos()) {
+                    if (jugadores[i].sumPuntos() > jugadores[j].sumPuntos()) {//Ya tengo un contador que hace esto
                         Caballo sav = jugadores[i];
                         jugadores[i] = jugadores[j];
                         jugadores[j] = sav;
@@ -115,12 +122,16 @@ public class Partida {
     }
 
     public static void main(String[] args) {
+        long startTime = System.nanoTime();
+
         Caballo[] jugadores = {new Caballo("Relampago"), new Caballo("Spirit"), new Caballo("Rayo")};
         Partida num1 = new Partida(jugadores);
         num1.Iniciarpartida();
         for (int i = 0; i < jugadores.length; i++) {
             System.out.println(jugadores[i].getPuntos() + " " + jugadores[i].getNombre());
         }
+        long endTime = System.nanoTime();
 
+        System.out.println(endTime-startTime);
     }
 }
