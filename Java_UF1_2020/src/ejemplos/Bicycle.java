@@ -1,14 +1,16 @@
+package ejemplos;
+
 class Bicycle {
 
     int cadence = 0;
     int speed = 0;
     int gear = 1;
-
+    String marca;
     public Bicycle(String marca) {
         this.marca = marca;
     }
 
-    String marca;
+
     void changeCadence(int newValue) {
         cadence = newValue;
     }

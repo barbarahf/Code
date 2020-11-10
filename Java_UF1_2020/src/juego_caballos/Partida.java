@@ -1,4 +1,4 @@
-package juego;
+package juego_caballos;
 
 import java.util.ArrayList;
 import java.util.List;

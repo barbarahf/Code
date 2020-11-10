@@ -18,8 +18,9 @@ public class Circle extends Shape {
     public final static double DEFAULT_RADIOUS = 10;
     private static int nCircles = 0;
     private double radious;
-    private int direccionX = +1;
-    private int direccionY = +1;
+    private int direccionX = 0;
+    private int direccionY = 0;
+
 
 //<editor-fold defaultstate="collapsed" desc="CONSTRUCTORS">
 
@@ -66,10 +67,10 @@ public class Circle extends Shape {
     /**
      * @return
      */
-    @Override
-    public double perimeter() {
-        return 2 * Math.PI * radious;
-    }
+//    @Override
+//    public double perimeter() {
+//        return 2 * Math.PI * radious;
+//    }
 
     /**
      * @return
@@ -94,22 +95,17 @@ public class Circle extends Shape {
 
     @Override
     public double perimetro() {
-        return 0;
+        return 2 * Math.PI * radious;
     }
 
-    public void polimorfisme() {
-        System.out.println("M'agrada el polimorfisme!!");
-    }
 
     public void dibuixa(PApplet papplet) {
+
         papplet.fill(getColor().getRed(),
                 getColor().getGreen(),
                 getColor().getBlue());
-        papplet.ellipse(getOrigin().x,
-                getOrigin().y,
-                (float) radious,
-                (float) radious);
-
+        papplet.ellipse(getOrigin().x, getOrigin().y, (float) radious, (float) radious);
+//  papplet.ellipse(getOrigin().x, getOrigin().y, (float) this.perimeter(), (float) this.perimeter());
 
     }
 
@@ -119,16 +115,18 @@ public class Circle extends Shape {
     }
 
     public void actualizar(PelotaMove aThis) {
-        if (getOrigin().x + this.radious >= aThis.width) {
+
+        if (getOrigin().x + (int)this.radious / 2 >= aThis.width) {
+            System.out.println(getOrigin().x +" "+ (int)this.radious+" "+aThis.width);
             direccionX = -1;
         }
-        if (getOrigin().x - this.radious <= 0) {
+        if (getOrigin().x - this.radious / 2 <= 0) {
             direccionX = +1;
         }
-        if (getOrigin().y + this.radious >= aThis.height) {
+        if (getOrigin().y + this.radious / 2 >= aThis.height) {
             direccionY = -1;
         }
-        if (getOrigin().y - this.radious <= 0) {
+        if (getOrigin().y - this.radious / 2 <= 0) {
             direccionY = +1;
         }
     }

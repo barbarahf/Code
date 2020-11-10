@@ -43,7 +43,7 @@ public class PelotaMove extends PApplet {
     @Override
     public void setup(){
         background(0, 0, 0);
-        cercle = new Circle(20, new Point(50, 0));
+        cercle = new Circle(60, new Point(0, 0));
 
     }
 
@@ -59,6 +59,7 @@ public class PelotaMove extends PApplet {
 
 
     public static void main(String[] args) {
+
         //cridem el mètode static runSketch
         PelotaMove.runSketch(new String[] {"prova1"}, new PelotaMove(500, 800));//Medidas del canvas
         //dos papplets en paral·l3l
