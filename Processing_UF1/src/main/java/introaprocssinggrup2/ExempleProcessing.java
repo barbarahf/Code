@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package  rebotar_pelota;
+package introaprocssinggrup2;
 
 import java.awt.Point;
 import processing.core.PApplet;
@@ -12,61 +12,64 @@ import processing.core.PApplet;
  *
  * @author pere
  */
-public class PelotaMove extends PApplet {
-
+public class ExempleProcessing extends PApplet {
+    
     private Circle cercle;
 
-    public PelotaMove(int width, int height) {
+    public ExempleProcessing(int width, int height) {
         setSize(width, height);
-        hideMenuBar(); //per a què no surti barra del costat
+        hideMenuBar(); //per a què no surti barra del costat  
     }
 
-    public PelotaMove() {
+    public ExempleProcessing() {
         setSize(400, 600);
-
-
     }
-
+    
+    
+    
     /**
      *  Com volem que sigui el papplet (abans de dibuixar la finestra)
      */
     @Override
-    //No pasa nada si quito el override
     public void settings(){
     }
-
+    
     /**
      * Quà volem posar al papplet (un cop ja tenim definida la finestra)
      * Si no hi ha el mètode draw, és el que mostra sempre
      */
     @Override
-    public void setup(){//Preparar sketch before draw()
+    public void setup(){
         background(0, 0, 0);
-        cercle = new Circle(30, new Point(0, 0));//Carga el primer circulo
-     //   cercle = new Circle(10, new Point(0, 0));
+        cercle = new Circle(20, new Point(0, 0));
+
     }
-
-
+    
+    /**
+     * Es va refrescant framerate vegades per segon (fps)
+     * Per defecte són 10 fps
+     * Permet fer el moviment
+     */
     @Override
     public void draw(){
         background(0, 0, 0);
         cercle.dibuixa(this);
-        cercle.mou();
-        cercle.actualizar(this);
-
+        cercle.mou(this);
+     
+        
     }
-
-
+    
+    
     public static void main(String[] args) {
-
         //cridem el mètode static runSketch
-        PelotaMove.runSketch(new String[] {"prova1"}, new PelotaMove(500, 800));//Medidas del canvas
-
+        ExempleProcessing.runSketch(
+                new String[] {"prova1"}, 
+                new ExempleProcessing(500, 800));
         //dos papplets en paral·l3l
-//        PelotaMove.runSketch(
-//                new String[] {"prova2"},
-//                new PelotaMove());
-
+        ExempleProcessing.runSketch(
+                new String[] {"prova2"}, 
+                new ExempleProcessing());
+        
     }
-
+    
 }

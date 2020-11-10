@@ -1,39 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22378066-32cf-4937-adef-60e209b0662c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Java_UF1_2020/src/figuras/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/Processing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_UF1_2020/src/Shape.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_UF1_2020/src/createColor.java" beforeDir="false" />
+    <list default="true" id="c4dccdb1-9993-4dab-a790-d00c7cffe74e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica_Covid_UF1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Processing_UF1/src/main/java/Processing_Teoria/AppCircles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Processing_UF1/src/main/java/Processing_Teoria/Ball.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Processing_UF1/src/main/java/Processing_Teoria/PApplet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Processing_UF1/src/main/java/Rectangulos/PAppet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Processing_UF1/src/main/java/Rectangulos/Pantalla.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Processing_UF1/src/main/java/Rectangulos/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Processing_UF1/src/main/java/Rectangulos/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Java_Start.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_UF1_2020/src/DragonBallExamples/Personaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java_UF1_2020/src/DragonBallExamples/Personaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Processing_UF1/src/main/java/rebotar_pelota/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Processing_UF1/src/main/java/rebotar_pelota/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Processing_UF1/src/main/java/rebotar_pelota/PelotaMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/Processing_UF1/src/main/java/rebotar_pelota/PelotaMove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Processing_UF1/target/classes/rebotar_pelota/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/Processing_UF1/target/classes/rebotar_pelota/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Processing_UF1/target/classes/rebotar_pelota/PelotaMove.class" beforeDir="false" afterPath="$PROJECT_DIR$/Processing_UF1/target/classes/rebotar_pelota/PelotaMove.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
   </component>
-  <component name="ProjectId" id="1cTyREHYOzqFSGt6aWzUn3p71b6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,57 +53,40 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Java_UF1_2020" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="Java" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="22378066-32cf-4937-adef-60e209b0662c" name="Default Changelist" comment="" />
-      <created>1590566867317</created>
+      <changelist id="c4dccdb1-9993-4dab-a790-d00c7cffe74e" name="Default Changelist" comment="" />
+      <created>1605027742335</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1590566867317</updated>
-      <workItem from="1590566870978" duration="2436000" />
-      <workItem from="1601670771414" duration="21000" />
-      <workItem from="1603710283033" duration="122000" />
+      <updated>1605027742335</updated>
+      <workItem from="1605027743383" duration="174000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="2021" y="186" width="424" height="491" key="FileChooserDialogImpl" timestamp="1603710403312">
-      <screen x="1366" y="0" width="1920" height="1080" />
+    <state x="511" y="1134" width="926" height="693" key="Maven.ArtifactSearchDialog" timestamp="1605027859849">
+      <screen x="296" y="1080" width="1366" height="768" />
     </state>
-    <state x="2021" y="186" key="FileChooserDialogImpl/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603710403312" />
-    <state x="466" y="156" width="424" height="491" key="FileChooserDialogImpl/0.29.1366.739/1366.0.1920.1080@0.29.1366.739" timestamp="1601670790417" />
+    <state x="511" y="1134" width="926" height="693" key="Maven.ArtifactSearchDialog/296.1080.1366.768/0.0.1920.1080@296.1080.1366.768" timestamp="1605027859849" />
   </component>
 </project>

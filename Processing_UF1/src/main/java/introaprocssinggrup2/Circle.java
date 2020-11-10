@@ -3,28 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package rebotar_pelota;
+package introaprocssinggrup2;
 
-
+import java.awt.Point;
 import processing.core.PApplet;
 
-import java.awt.*;
-
 /**
+ *
  * @author pereg
  */
 public class Circle extends Shape {
     private final static int CODI_BASE = 20000;
     public final static double DEFAULT_RADIOUS = 10;
-    private static int nCircles = 0;
+    
+    private static int nCircles=0;
     private double radious;
-    private int direccionX = 0;
-    private int direccionY = 0;
-
 
 //<editor-fold defaultstate="collapsed" desc="CONSTRUCTORS">
 
     /**
+     *
      * @param radious
      * @param origin
      */
@@ -34,7 +32,7 @@ public class Circle extends Shape {
         super(origin);
         this.radious = radious;
     }
-
+    
     /**
      *
      */
@@ -43,36 +41,33 @@ public class Circle extends Shape {
 //        super();
 //        radious = DEFAULT_RADIOUS;
     }
-
-    @Override
-    public int getCodi() {
-        return 0;
-    }
 //</editor-fold>
 
 //<editor-fold defaultstate="collapsed" desc="GETTERS/SETTER">
-
     /**
+     *
      * @return
      */
     public double getRadious() {
         return radious;
     }
-
+    
     public void setRadious(double radious) {
         this.radious = radious;
     }
 //</editor-fold>
 
     /**
+     *
      * @return
      */
-//    @Override
-//    public double perimeter() {
-//        return 2 * Math.PI * radious;
-//    }
+    @Override
+    public double perimeter() {
+        return 2* Math.PI * radious;
+    }
 
     /**
+     *
      * @return
      */
     @Override
@@ -87,49 +82,30 @@ public class Circle extends Shape {
     }
 
 
+    
     @Override
     protected void assignarCodi() {
         nCircles++;
         codi = CODI_BASE + nCircles;
     }
-
-    @Override
-    public double perimetro() {
-        return  2 * radious;
+    
+    public void polimorfisme(){
+        System.out.println("M'agrada el polimorfisme!!");
     }
 
-
     public void dibuixa(PApplet papplet) {
-
         papplet.fill(getColor().getRed(),
                 getColor().getGreen(),
                 getColor().getBlue());
-        papplet.ellipse(getOrigin().x, getOrigin().y, (float) perimetro(), (float) perimetro());
-//  papplet.ellipse(getOrigin().x, getOrigin().y, (float) this.perimeter(), (float) this.perimeter());
-
+        papplet.ellipse(getOrigin().x,
+                getOrigin().y, 
+                (float) radious, 
+                (float) radious);
+        
+        
     }
 
-    public void mou() {
-
-        setOrigin(new Point(getOrigin().x + direccionX, getOrigin().y + direccionY));
+    public void mou(ExempleProcessing aThis) {
+        setOrigin(new Point(getOrigin().x + 1, getOrigin().y + 1));
     }
-
-    public void actualizar(PelotaMove aThis) {
-
-        if (getOrigin().x + (int) this.radious >= aThis.width) {
-
-            direccionX = -1;
-        }
-        if (getOrigin().x - this.radious <= 0) {
-            direccionX = +1;
-        }
-        if (getOrigin().y + this.radious >= aThis.height) {
-            direccionY = -1;
-        }
-        if (getOrigin().y - this.radious <= 0) {
-            direccionY = +1;
-        }
-    }
-
-
 }

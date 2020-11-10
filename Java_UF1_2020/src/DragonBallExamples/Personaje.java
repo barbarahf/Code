@@ -1,6 +1,10 @@
 package DragonBallExamples;
 
-
+/**
+ * Esta clase pretende crear un personaje para un videojuego
+ *
+ * @author Barbara Herrera flores
+ */
 public abstract class Personaje {
     private String nom; //Encapsulacion
     private int ki;
@@ -54,6 +58,11 @@ public abstract class Personaje {
         return vivo;
     }
 
+    /**
+     * Metodo para revivir al personaje
+     *
+     * @param viv Este parametro identifica si el personaje está vivo
+     */
     public void setVivo(boolean viv) {
         if (viv) {
             System.out.println("Lo siento, necesita las esfereas del dragon para poder revivir a " + this.nom);
@@ -62,8 +71,10 @@ public abstract class Personaje {
         }
     }
 
+    /**
+     * @return Es un metodo void, revive al personaje
+     */
     //</editor-fold>
-
     public abstract String fusion();
 
     public abstract void ataque();
@@ -74,7 +85,13 @@ public abstract class Personaje {
 }
 
 class Sayayin extends Personaje { //Herencia
+
     String estado;
+
+    public Sayayin(String nom, int ki, String planeta, String estado) {
+        super(nom, ki, planeta);
+        this.estado = estado;
+    }
 
     public Sayayin(String nom, int ki, String planeta) {
         super(nom, ki, planeta);
@@ -99,7 +116,6 @@ class Sayayin extends Personaje { //Herencia
         this.estado = "super sayayin";
     }
 
-  
 
     public static void main(String[] args) {
         Personaje goku = new Sayayin("goku", 1000, "Vegeta"); //Polimorfismo
