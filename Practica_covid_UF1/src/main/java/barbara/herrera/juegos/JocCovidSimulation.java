@@ -6,7 +6,8 @@
 package barbara.herrera.juegos;
 
 
-import barbara.herrera.Figuras.Circle;
+import barbara.herrera.Figuras.Individuo;
+import barbara.herrera.utils.Utils;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -16,19 +17,10 @@ import java.util.ArrayList;
  */
 public class JocCovidSimulation extends JocProcessing {
     private ArrayList<Individuo> personas = new ArrayList<Individuo>();
-    //   private Circle circulos[] = new Circle[50];
-
-    public static double distanceBetweenPoints(Point p1, Point p2) {
-        return Math.hypot(p1.getX() - p2.getX(), p1.getY() - p2.getY());
-    }
-
-//    public static Point midelPoint(Point punto1, Point punto2) {
-//        return new Point((int) (punto1.getX() + punto2.getX() / 2), (int) (punto1.getY() + punto2.getY() / 2));
-//    }
 
     public boolean checkOccupedPoint(Point pointToCheck, double radius) {
         for (Individuo persona : personas) {
-            double distance = distanceBetweenPoints(pointToCheck, persona.getOrigin());
+            double distance = Utils.distanciaEntreIndividuos(pointToCheck, persona.getOrigin());
             if (distance < radius + persona.getRadious()) {
                 return true;
             }
@@ -36,9 +28,13 @@ public class JocCovidSimulation extends JocProcessing {
         return false;
     }
 
+    /**
+     * En la funcion preparar joc se inicia el número de "individuos" y un punto aleatorio (para cada individuo)
+     * separado del borde la la pantalla, así preparar el estado inicial del juego.
+     */
     @Override
     public void prepararJoc() {
-        setSize(1600, 700);
+        setSize(1200, 800);
         while (personas.size() < 200) {
             int circleRadius = 6;
             int circleSize = circleRadius * 2;
@@ -63,17 +59,12 @@ public class JocCovidSimulation extends JocProcessing {
     @Override
     public void jugada() {
         background(255, 255, 255);
-//        Rectangle r = Rectangle.getRectangleRandom(this);
-//        r.dibuixa(this);
-        // Circle a = new Circle();
-        //  CIRCULOS.get(0).dibuixa(this);
-        for (Individuo per : personas) {
-            per.dibuixa(this);
-            per.mou();
-          per.choqueDetectar(personas, this);
-            per.step(this);
-        }
+        for (int i = 0; i < personas.size(); i++) {
+            personas.get(i).mou(this);
+            personas.get(i).choqueDetectar(personas);
+            personas.get(i).dibuixa(this);
 
+        }
     }
 
     @Override
