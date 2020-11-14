@@ -11,6 +11,7 @@ import java.awt.*;
 public class Circle extends Shape {
     public final static double DEFAULT_RADIOUS = 10;
     private double radious;
+    private static int counter;
 
 //<editor-fold defaultstate="collapsed" desc="CONSTRUCTORS">
 
@@ -23,7 +24,7 @@ public class Circle extends Shape {
         //if (radious > 10000) throw new Exception();
         super(origin);
         this.radious = radious;
-
+        counter++;
     }
 
     public Circle() {

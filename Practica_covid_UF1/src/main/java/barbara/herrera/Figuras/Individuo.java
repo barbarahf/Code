@@ -74,27 +74,12 @@ public class Individuo extends Circle {
     public void choqueDetectar(List<Individuo> personas) {
         for (int i = 0; i < personas.size(); i++) {
             if (choca(personas.get(i)) && personas.get(i) != this) {
-
-
-
                 int savVelY = personas.get(i).yV;
                 int savVelX = personas.get(i).xV;
                 personas.get(i).yV = this.yV;
                 personas.get(i).xV = this.xV;
                 this.yV = savVelY;
                 this.xV = savVelX;
-
-
-                //Mover la pelota actual de la colision
-//                double distance = Utils.distanciaEntreIndividuos(getOrigin(), personas.get(i).getOrigin());
-//                float colisionDistan = (float) (0.5f * (distance - this.getRadious() - personas.get(i).getRadious()));
-//                this.xV  -= colisionDistan * (this.getOrigin().x - personas.get(i).getOrigin().x) / distance;
-//                this.yV  -= colisionDistan * (this.getOrigin().y - personas.get(i).getOrigin().y) / distance;
-//
-//                //Mover la otra pelota de la colision
-//                personas.get(i).xV += colisionDistan * (this.getOrigin().x - personas.get(i).getOrigin().x) / distance;
-//                personas.get(i).yV += colisionDistan * (this.getOrigin().y - personas.get(i).getOrigin().y) / distance;
-
 
                 if (personas.get(i).getColor() == Color.green) {
                     personas.get(i).setColor(Color.MAGENTA);
@@ -107,8 +92,10 @@ public class Individuo extends Circle {
                 } else {
                     setColor(Color.green);
                 }
+                break;
             }
         }
+
 
     }
 
