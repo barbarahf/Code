@@ -42,10 +42,10 @@ public abstract class JocProcessing extends PApplet implements JocInterface {
     @Override
     public void draw() {
         jugada();
-//        if (esFinal()) {
-//            finalJoc();
-//            noLoop(); //deixa de cridar el draw
-//        }
+        if (esFinal()) {
+            finalJoc();
+            noLoop(); //deixa de cridar el draw
+        }
     }
 
 }

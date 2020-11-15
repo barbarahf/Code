@@ -95,7 +95,7 @@ public class Circle extends Shape {
 
     @Override
     public double perimetro() {
-        return  2 * radious;
+        return 2 * radious;
     }
 
 
@@ -114,6 +114,11 @@ public class Circle extends Shape {
         setOrigin(new Point(getOrigin().x + direccionX, getOrigin().y + direccionY));
     }
 
+
+    public void separar(Circle circle) {
+        this.setOrigin(new Point((int) (this.getOrigin().x-1), this.getOrigin().y));
+
+    }
     public void actualizar(PelotaMove aThis) {
 
         if (getOrigin().x + (int) this.radious >= aThis.width) {
