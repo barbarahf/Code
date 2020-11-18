@@ -9,10 +9,12 @@ import java.awt.Color;
 import java.awt.Point;
 
 
-
+/**
+ * @author Barbara Herrera
+ */
 public abstract class Shape {
 
-    
+
     final static Color DEFAULT_COLOR = Color.RED;
     final static Point DEFAULT_POINT = new Point(0, 0);
     private static int nShapes = 0;
@@ -22,8 +24,8 @@ public abstract class Shape {
     protected int codi;
 
 //<editor-fold defaultstate="collapsed" desc="CONSTRUCTORS">
+
     /**
-     *
      * @param origin
      */
     protected Shape(Point origin) {
@@ -31,13 +33,13 @@ public abstract class Shape {
 //        this.origin = origin;
         this(DEFAULT_COLOR, origin);
     }
-    
+
     protected Shape() {
 //        color = DEFAULT_COLOR;
 //        origin = DEFAULT_POINT;
         this(DEFAULT_COLOR, DEFAULT_POINT);
     }
-    
+
     //Constructor principal
     //Centralitza el control d'errors
     protected Shape(Color col, Point org) {
@@ -46,28 +48,27 @@ public abstract class Shape {
         assignarCodi();
     }
 //</editor-fold>
-    
+
 //<editor-fold defaultstate="collapsed" desc="GETTERS & SETTERS">
+
     /**
-     *
      * @return el color
      */
-    public Color getColor(){
+    public Color getColor() {
         return color;
     }
-    
+
     /**
-     *
      * @param color
      */
-    public void setColor(Color color){
+    public void setColor(Color color) {
         this.color = color;
     }
-    
+
     public Point getOrigin() {
         return origin;
     }
-    
+
     public void setOrigin(Point origin) {
         this.origin = origin;
     }
@@ -76,11 +77,11 @@ public abstract class Shape {
 
     public abstract int getCodi();
 
-    public double area(){
+    public double area() {
         return 0;
     }
-    
-    public double perimeter(){
+
+    public double perimeter() {
         return 0;
     }
 

@@ -44,6 +44,7 @@ public abstract class JocProcessing extends PApplet implements JocInterface {
         jugada();
         if (esFinal()) {
             finalJoc();
+
             noLoop(); //deixa de cridar el draw
         }
     }

@@ -7,7 +7,7 @@ package barbara.herrera.interficies;
 
 /**
  *
- * @author pereg
+ * @author Barbara Herrera
  */
 public interface JocInterface {
     public void prepararJoc();

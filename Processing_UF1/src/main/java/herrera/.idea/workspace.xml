@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="493911fd-35e3-403e-bc17-9379aabdac65" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/.idea/libraries/Maven__org_processing_core_3_3_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/nb-configuration.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/practicapuntdepartida.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/src/main/java/net/jaumebalmes/pguitart/practicapuntdepartida/figures/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/src/main/java/net/jaumebalmes/pguitart/practicapuntdepartida/figures/Individu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/src/main/java/net/jaumebalmes/pguitart/practicapuntdepartida/figures/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/src/main/java/net/jaumebalmes/pguitart/practicapuntdepartida/figures/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/src/main/java/net/jaumebalmes/pguitart/practicapuntdepartida/interficies/JocInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/src/main/java/net/jaumebalmes/pguitart/practicapuntdepartida/jocs/JocEndevinaNumero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/src/main/java/net/jaumebalmes/pguitart/practicapuntdepartida/jocs/JocPlujaRectangles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/src/main/java/net/jaumebalmes/pguitart/practicapuntdepartida/jocs/JocProcessing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PracticaPelotas/src/main/java/net/jaumebalmes/pguitart/practicapuntdepartida/utils/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Practica_covid_UF1/src/main/java/barbara/herrera/Figuras/Individuo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Practica_covid_UF1/src/main/java/barbara/herrera/Figuras/Individuo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Practica_covid_UF1/src/main/java/barbara/herrera/juegos/JocCovidSimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Practica_covid_UF1/src/main/java/barbara/herrera/juegos/JocCovidSimulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Practica_covid_UF1/target/classes/barbara/herrera/Figuras/Individuo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Practica_covid_UF1/target/classes/barbara/herrera/Figuras/Individuo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Practica_covid_UF1/target/classes/barbara/herrera/Figuras/Individuo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Practica_covid_UF1/target/classes/barbara/herrera/Figuras/Individuo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Practica_covid_UF1/target/classes/barbara/herrera/juegos/JocCovidSimulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Practica_covid_UF1/target/classes/barbara/herrera/juegos/JocCovidSimulation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/Time$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/Time.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/pruebas.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kQKXfiXEJVasOkMywHT3mJ72S0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Practica_covid_UF1" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/herrera/Figuras" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="493911fd-35e3-403e-bc17-9379aabdac65" name="Default Changelist" comment="" />
+      <created>1605627416141</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605627416141</updated>
+      <workItem from="1605627417839" duration="132000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="742" y="297" width="426" height="493" key="FileChooserDialogImpl" timestamp="1605627547535">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="742" y="297" width="426" height="493" key="FileChooserDialogImpl/296.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1605627547535" />
+  </component>
+</project>

@@ -1,10 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package barbara.herrera.juegos;
-
 
 import barbara.herrera.Figuras.Individuo;
 import barbara.herrera.utils.Utils;
@@ -17,8 +11,9 @@ import java.util.ArrayList;
  */
 
 public class JocCovidSimulation extends JocProcessing {
-    private final ArrayList<Individuo> personas = new ArrayList<Individuo>();
 
+    private final ArrayList<Individuo> personas = new ArrayList<Individuo>();
+    Button boton;
 
     /**
      * @param pointToCheck Recibe un punto aleatorio para verificar si está o no ocupado.
@@ -42,7 +37,10 @@ public class JocCovidSimulation extends JocProcessing {
      */
     @Override
     public void prepararJoc() {
+
         setSize(1320, 700);
+        /*Se crea un boton para reiniciar el juego*/
+        boton = new Button("Reiniciar", (float) width / 2, (float) height / 2, 150, 70);
         while (personas.size() < 200) {
             int circleRadius = 5;
             int circleSize = circleRadius * 2;
@@ -58,10 +56,6 @@ public class JocCovidSimulation extends JocProcessing {
         int randomInfected = Utils.random(0, personas.size());
         personas.get(randomInfected).setInfectat(true);
         personas.get(randomInfected).setColor(new Color(186, 99, 35));
-//
-//        Individuo per = new Individuo(6, new Point(width/2, height/2));
-//        per.setInfectat(true);
-//        personas.add(per);
 
     }
 
@@ -75,22 +69,37 @@ public class JocCovidSimulation extends JocProcessing {
      */
     @Override
     public void jugada() {
+
         background(255, 255, 255);
         for (int i = 0; i < personas.size(); i++) {
             personas.get(i).choqueDetectar(personas);
             personas.get(i).mou(this);
             personas.get(i).dibuixa(this);
+
         }
+        textSize(20);
+        text("Infectados: " + Individuo.getInfectados(), 10, 30);
+        fill(0, 102, 153);
+        text("Curados: " + Individuo.getCurados(), 10, 60);
+        fill(0, 102, 153, 51);
+        text("Sanos: " + Individuo.getSanos(), 10, 90);
+
+
     }
 
     @Override
     public boolean esFinal() {
-        return false;
+        return Individuo.getInfectados() == 0;
     }
 
     @Override
     public void finalJoc() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        boton.Draw();
+        if (boton.MouseIsOver() && mousePressed) {
+            prepararJoc();
+            loop();
+        }
+        // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public static void main(String[] args) {
@@ -99,4 +108,37 @@ public class JocCovidSimulation extends JocProcessing {
                 new JocCovidSimulation());
     }
 
+
+    class Button {
+        String label;
+        float x;    // top left corner x position
+        float y;    // top left corner y position
+        float w;    // width of button
+        float h;    // height of button
+
+        Button(String labelB, float xpos, float ypos, float widthB, float heightB) {
+            label = labelB;
+            x = xpos;
+            y = ypos;
+            w = widthB;
+            h = heightB;
+        }
+
+        void Draw() {
+            fill(218);
+            stroke(141);
+            rect(x, y, w, h, 10);
+            textAlign(CENTER, CENTER);
+            fill(0);
+            text(label, x + (w / 2), y + (h / 2));
+        }
+
+        boolean MouseIsOver() {
+            if (mouseX > x && mouseX < (x + w) && mouseY > y && mouseY < (y + h)) {
+                return true;
+            }
+            return false;
+        }
+
+    }
 }

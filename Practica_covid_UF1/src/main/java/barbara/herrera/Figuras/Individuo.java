@@ -9,7 +9,9 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-
+/**
+ * @author Barbara Herrera
+ */
 public class Individuo extends Circle {
 
     private float xV;
@@ -17,22 +19,18 @@ public class Individuo extends Circle {
     private boolean sa;
     private boolean infectat;
     private boolean recuperat;
-
-    TimerTask task = new TimerTask() {//Clase anonima
-        @Override
-        public void run() {
-            setColor(new Color(204, 138, 192));
-            recuperat = true;
-         //   infectat = false;
-        }
-
-    };
+    private static int curados;
+    private static int infectados;
+    private static int Personasanos;
 
     public Individuo() {
         super();
         this.xV = Utils.getRandomSigno();
         this.yV = Utils.getRandomSigno();
-
+        this.sa = true;
+        this.infectat = false;
+        this.recuperat = false;
+        Personasanos++;
     }
 
 
@@ -43,9 +41,22 @@ public class Individuo extends Circle {
         this.sa = true;
         this.infectat = false;
         this.recuperat = false;
+        Personasanos++;
     }
 
     // <editor-fold defaultstate="collapsed" desc="GETTERS & SETTERS">
+    public static int getCurados() {
+        return curados;
+    }
+
+    public static int getInfectados() {
+        return infectados;
+    }
+
+    public static int getSanos() {
+        return Personasanos;
+    }
+
     public boolean isSa() {
         return sa;
     }
@@ -63,22 +74,27 @@ public class Individuo extends Circle {
         if (infectat && !this.recuperat && !this.infectat) {
             this.setColor(new Color(186, 99, 35));
             this.infectat = true;
+            //Añadir tiempo de recuparacion
             Timer timer = new Timer();
-            timer.schedule(task, 8000);
+            timer.schedule(task, 9500);
+            infectados++;
+            Personasanos--;
+
         }
     }
 
     public boolean isRecuperat() {
-
         return recuperat;
     }
 
     public void setRecuperat(boolean recuperat) {
+        curados++;
+        infectados--;
         this.recuperat = recuperat;
     }
     // </editor-fold>
 
-
+    // <editor-fold defaultstate="collapsed" desc=" METODOS ">
     public void dibuixa(JocCovidSimulation window) {
         window.fill(getColor().getRed(), getColor().getGreen(), getColor().getBlue());
         window.ellipse(getOrigin().x, getOrigin().y, (float) this.perimeter(), (float) this.perimeter());
@@ -123,7 +139,9 @@ public class Individuo extends Circle {
         return distance < getRadious() + persona.getRadious();
     }
 
-
+    /**
+     * @param personas Recibe cada una de los individuos a comprobar
+     */
     public void choqueDetectar(List<Individuo> personas) {
         for (Individuo persona : personas) {
 
@@ -133,10 +151,11 @@ public class Individuo extends Circle {
                     this.setInfectat(true);
                 }
                 /*Nuevos puntos intercambiando los valores para comprobar distancia*/
+
                 Point pointA = new Point((int) (this.getOrigin().x + persona.xV), (int) (this.getOrigin().y + persona.yV));
                 Point pointB = new Point((int) (persona.getOrigin().x + this.xV), (int) (persona.getOrigin().y + this.yV));
                 double distance = Utils.distanciaEntreIndividuos(pointA, pointB);
-                /*Si intercambiando velocidades se alejan, las intercambia, en caso contrario mantienen la misma velocidad*/
+                //Si intercambiando velocidades se alejan, las intercambia, en caso contrario mantienen la misma velocidad
                 if (distance > getRadious() + (persona.getRadious())) {
                     float savVelY = persona.yV;
                     float savVelX = persona.xV;
@@ -144,10 +163,31 @@ public class Individuo extends Circle {
                     persona.xV = this.xV;
                     this.yV = savVelY;
                     this.xV = savVelX;
+
                 }
             }
         }
     }
+
+    // </editor-fold>
+
+    /**
+     * Es una clase anonima, para generar un temporizador, tiempo de "infección"
+     */
+    TimerTask task = new TimerTask() {
+        @Override
+        public void run() {
+            setColor(new Color(204, 138, 192));
+            recuperat = true;
+            infectat = false;
+            curados++;
+            infectados--;
+        }
+
+    };
+
 }
+
+
 
 

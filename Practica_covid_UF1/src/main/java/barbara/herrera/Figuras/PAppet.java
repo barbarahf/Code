@@ -4,10 +4,9 @@
  * and open the template in the editor.
  */
 package barbara.herrera.Figuras;
-
 /**
  *
- * @author pere
+ * @author Barbara Herrera
  */
 class PAppet {
     

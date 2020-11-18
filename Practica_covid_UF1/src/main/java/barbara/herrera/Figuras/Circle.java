@@ -6,8 +6,10 @@
 package barbara.herrera.Figuras;
 
 import java.awt.*;
-
-
+/**
+ *
+ * @author Barbara Herrera
+ */
 public class Circle extends Shape {
     public final static double DEFAULT_RADIOUS = 10;
     private double radious;
@@ -20,8 +22,6 @@ public class Circle extends Shape {
      * @param origin
      */
     public Circle(double radious, Point origin) {
-        //Punt centrakitzat per validar que no creem cap objecte incorrecte
-        //if (radious > 10000) throw new Exception();
         super(origin);
         this.radious = radious;
         counter++;
@@ -37,9 +37,14 @@ public class Circle extends Shape {
     public int getCodi() {
         return 0;
     }
+
+    public static int getCounter() {
+        return counter;
+    }
+
 //</editor-fold>
 
-//<editor-fold defaultstate="collapsed" desc="GETTERS/SETTER">
+// <editor-fold defaultstate="collapsed" desc=" Getters && setters ">
 
 
     public double getRadious() {
@@ -65,8 +70,7 @@ public class Circle extends Shape {
 
     @Override
     public String toString() {
-        return "Circle{" + "radious=" + radious + '}'
-                + " " + super.toString();
+        return "Circle{" + "radious=" + radious + '}' + " " + super.toString();
     }
 
 
@@ -75,9 +79,10 @@ public class Circle extends Shape {
         return 0;
     }
 
+    // </editor-fold>
 
 }
 
 
-//</editor-fold>
+
 
