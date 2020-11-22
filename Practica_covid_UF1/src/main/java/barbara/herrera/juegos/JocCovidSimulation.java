@@ -13,7 +13,8 @@ import java.util.ArrayList;
 public class JocCovidSimulation extends JocProcessing {
 
     private final ArrayList<Individuo> personas = new ArrayList<Individuo>();
-    Button boton;
+    private static final int RIDIO = 6;
+    private static final int PERIMETRO = RIDIO * 2;
 
     /**
      * @param pointToCheck Recibe un punto aleatorio para verificar si está o no ocupado.
@@ -40,23 +41,17 @@ public class JocCovidSimulation extends JocProcessing {
 
         setSize(1320, 700);
         /*Se crea un boton para reiniciar el juego*/
-        boton = new Button("Reiniciar", (float) width / 2, (float) height / 2, 150, 70);
         while (personas.size() < 200) {
-            int circleRadius = 5;
-            int circleSize = circleRadius * 2;
-            Point randomPoint = new Point((int) random(circleSize, this.width - circleSize), (int) random(circleSize, this.height - circleSize));
-            while (checkOccupedPoint(randomPoint, circleRadius)) {
-                randomPoint = new Point((int) random(circleSize, this.width - circleSize), (int) random(circleRadius, this.height - circleSize));
+            Point randomPoint = new Point((int) random(PERIMETRO, this.width - PERIMETRO), (int) random(PERIMETRO, this.height - PERIMETRO));
+            while (checkOccupedPoint(randomPoint, RIDIO)) {
+                randomPoint = new Point((int) random(PERIMETRO, this.width - PERIMETRO), (int) random(RIDIO, this.height - PERIMETRO));
             }
-            Individuo nuevaPersona = new Individuo(circleRadius, randomPoint);
-            nuevaPersona.setColor(new Color(170, 198, 202));
+            Individuo nuevaPersona = new Individuo(RIDIO, randomPoint, new Color(170, 198, 202));
             personas.add(nuevaPersona);
         }
 
         int randomInfected = Utils.random(0, personas.size());
         personas.get(randomInfected).setInfectat(true);
-        personas.get(randomInfected).setColor(new Color(186, 99, 35));
-
     }
 
     @Override
@@ -94,11 +89,7 @@ public class JocCovidSimulation extends JocProcessing {
 
     @Override
     public void finalJoc() {
-        boton.Draw();
-        if (boton.MouseIsOver() && mousePressed) {
-            prepararJoc();
-            loop();
-        }
+
         // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -109,36 +100,4 @@ public class JocCovidSimulation extends JocProcessing {
     }
 
 
-    class Button {
-        String label;
-        float x;    // top left corner x position
-        float y;    // top left corner y position
-        float w;    // width of button
-        float h;    // height of button
-
-        Button(String labelB, float xpos, float ypos, float widthB, float heightB) {
-            label = labelB;
-            x = xpos;
-            y = ypos;
-            w = widthB;
-            h = heightB;
-        }
-
-        void Draw() {
-            fill(218);
-            stroke(141);
-            rect(x, y, w, h, 10);
-            textAlign(CENTER, CENTER);
-            fill(0);
-            text(label, x + (w / 2), y + (h / 2));
-        }
-
-        boolean MouseIsOver() {
-            if (mouseX > x && mouseX < (x + w) && mouseY > y && mouseY < (y + h)) {
-                return true;
-            }
-            return false;
-        }
-
-    }
 }

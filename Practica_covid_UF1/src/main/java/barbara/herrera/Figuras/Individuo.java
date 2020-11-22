@@ -34,8 +34,8 @@ public class Individuo extends Circle {
     }
 
 
-    public Individuo(int radious, Point initialPoint) {
-        super(radious, initialPoint);
+    public Individuo(int radious, Point initialPoint, Color actualColor) {
+        super(radious, initialPoint, actualColor);
         this.xV = Utils.getRandomSigno();
         this.yV = Utils.getRandomSigno();
         this.sa = true;

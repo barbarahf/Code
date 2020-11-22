@@ -6,8 +6,8 @@
 package barbara.herrera.Figuras;
 
 import java.awt.*;
+
 /**
- *
  * @author Barbara Herrera
  */
 public class Circle extends Shape {
@@ -23,6 +23,12 @@ public class Circle extends Shape {
      */
     public Circle(double radious, Point origin) {
         super(origin);
+        this.radious = radious;
+        counter++;
+    }
+
+    public Circle(double radious, Point origin, Color actualColor) {
+        super(actualColor, origin);
         this.radious = radious;
         counter++;
     }
