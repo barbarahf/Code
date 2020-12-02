@@ -39,7 +39,7 @@ public class JocCovidSimulation extends JocProcessing {
     @Override
     public void prepararJoc() {
 
-        setSize(1320, 700);
+        setSize(1300, 700);
         /*Se crea un boton para reiniciar el juego*/
         while (personas.size() < 200) {
             Point randomPoint = new Point((int) random(PERIMETRO, this.width - PERIMETRO), (int) random(PERIMETRO, this.height - PERIMETRO));
@@ -67,9 +67,9 @@ public class JocCovidSimulation extends JocProcessing {
 
         background(255, 255, 255);
         for (int i = 0; i < personas.size(); i++) {
-            personas.get(i).choqueDetectar(personas);
-            personas.get(i).mou(this);
             personas.get(i).dibuixa(this);
+            personas.get(i).mou(this);
+            personas.get(i).choqueDetectar(personas);
 
         }
         textSize(20);
@@ -84,13 +84,14 @@ public class JocCovidSimulation extends JocProcessing {
 
     @Override
     public boolean esFinal() {
-        return Individuo.getInfectados() == 0;
+        //  return Individuo.getInfectados() == 0;
+        return false;
     }
 
     @Override
     public void finalJoc() {
 
-        // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public static void main(String[] args) {

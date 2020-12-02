@@ -14,8 +14,8 @@ import java.util.TimerTask;
  */
 public class Individuo extends Circle {
 
-    private float xV;
-    private float yV;
+    private int xV;
+    private int yV;
     private boolean sa;
     private boolean infectat;
     private boolean recuperat;
@@ -126,7 +126,6 @@ public class Individuo extends Circle {
         x += xV;
         y += yV;
         setOrigin(new Point(x, y));
-
     }
 
     /**
@@ -150,21 +149,10 @@ public class Individuo extends Circle {
                     persona.setInfectat(true);
                     this.setInfectat(true);
                 }
-                /*Nuevos puntos intercambiando los valores para comprobar distancia*/
-
-                Point pointA = new Point((int) (this.getOrigin().x + persona.xV), (int) (this.getOrigin().y + persona.yV));
-                Point pointB = new Point((int) (persona.getOrigin().x + this.xV), (int) (persona.getOrigin().y + this.yV));
-                double distance = Utils.distanciaEntreIndividuos(pointA, pointB);
-                //Si intercambiando velocidades se alejan, las intercambia, en caso contrario mantienen la misma velocidad
-                if (distance > getRadious() + (persona.getRadious())) {
-                    float savVelY = persona.yV;
-                    float savVelX = persona.xV;
-                    persona.yV = this.yV;
-                    persona.xV = this.xV;
-                    this.yV = savVelY;
-                    this.xV = savVelX;
-
-                }
+                persona.yV = -persona.yV;
+                persona.xV = -persona.xV;
+                this.yV = -this.yV;
+                this.xV = -this.xV;
             }
         }
     }

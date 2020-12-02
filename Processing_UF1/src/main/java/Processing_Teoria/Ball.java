@@ -9,12 +9,12 @@ public class Ball {
     private float size;
     private float xSpeed;
     private float ySpeed;
-
+//  float diameter;
 //    public static int random(int min, int max) {
 //        return (int) (Math.random() * (max - min + 1) + min);
 //    }
 
-    public Ball(PApplet sketch,float x, float y) {
+    public Ball(PApplet sketch, float x, float y) {
         this.sketch = sketch;
         this.x = x;
         this.y = y;
