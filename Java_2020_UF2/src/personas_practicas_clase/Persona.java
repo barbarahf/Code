@@ -1,9 +1,6 @@
-package personas_practicas;
-
-import contenedor_practica_0.Coche;
+package personas_practicas_clase;
 
 import java.time.LocalDate;
-import java.util.Comparator;
 
 
 public class Persona implements Comparable<Persona> {
@@ -12,7 +9,8 @@ public class Persona implements Comparable<Persona> {
     private String cognom_2;
     private String dni; //Campo unico
     private LocalDate data;
-
+    private int id;
+    private static int count = 0;
 
     public Persona(String nom, String cognom_1, String getCognom_2, String dni, LocalDate data) {
         this.nom = nom;
@@ -20,6 +18,7 @@ public class Persona implements Comparable<Persona> {
         this.cognom_2 = getCognom_2;
         this.dni = dni;
         this.data = data;
+        this.id = count++;
     }
 
     @Override
@@ -55,7 +54,7 @@ public class Persona implements Comparable<Persona> {
     }
 
     // </editor-fold>
-
+    //Orden natural, arrays sort & collection sort
     @Override
     public int compareTo(Persona persona) {
         int result = this.cognom_1.compareToIgnoreCase(persona.cognom_1);
@@ -68,10 +67,10 @@ public class Persona implements Comparable<Persona> {
         return result;
     }
 
-//    @Override
-//    public int hashCode() {
-//        return id;
-//    }
+    @Override
+    public int hashCode() {
+        return id;
+    }
 
     @Override
     public boolean equals(Object obj) {

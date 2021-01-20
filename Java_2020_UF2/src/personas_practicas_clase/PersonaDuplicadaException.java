@@ -1,4 +1,4 @@
-package personas_practicas;
+package personas_practicas_clase;
 
 public class PersonaDuplicadaException extends Exception {
     public PersonaDuplicadaException(String errorMessage) {
