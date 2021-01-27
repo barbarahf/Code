@@ -1,10 +1,7 @@
-package practica_A2_libros;
+package practica_A2_libros_02;
 
-
-import contenedor_practica_0.Coche;
 
 import java.time.LocalDate;
-import java.util.Comparator;
 
 public class Libro implements Comparable<Libro> {
     private int isbn;

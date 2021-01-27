@@ -1,4 +1,4 @@
-package personas_practicas_clase;
+package personas_practica_clase;
 
 import java.time.LocalDate;
 import java.util.Iterator;
